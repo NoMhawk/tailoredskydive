@@ -262,7 +262,7 @@
 
             <div class="glass-card rounded-3xl p-6 sm:p-10 shadow-2xl border border-accentBlue/30 grid grid-cols-1 lg:grid-cols-12 gap-10">
                 
-                <!-- Left Configuration Column (Steps 1, 2, 3 ordered correctly) -->
+                <!-- Left Configuration Column -->
                 <div class="lg:col-span-7 space-y-8">
                     
                     <!-- Step 1: Altitude -->
@@ -292,33 +292,33 @@
                         </div>
                     </div>
 
-                    <!-- Step 2: Media Package -->
+                    <!-- Step 2: Media Package (Default: No Media) -->
                     <div>
                         <label class="block text-sm font-semibold text-white mb-3 flex items-center justify-between">
                             <span><span class="text-accentBlue font-bold mr-2">02.</span> Select Media Package</span>
                             <span class="text-xs text-gray-400 font-normal">Capture your memories</span>
                         </label>
                         <div class="space-y-3">
-                            <button type="button" onclick="setMedia('none', 0)" id="media-none" class="media-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                            <button type="button" onclick="setMedia('none', 0)" id="media-none" class="media-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10">
                                 <div class="flex items-center space-x-3">
-                                    <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
+                                    <div class="w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon"><i class="fa-solid fa-check"></i></div>
                                     <div>
                                         <div class="font-semibold text-white text-sm">No Media</div>
                                         <div class="text-xs text-gray-400">Just the raw, pure experience</div>
                                     </div>
                                 </div>
-                                <span class="font-bold text-gray-300 text-sm">£0</span>
+                                <span class="font-bold text-accentCyan text-sm">£0</span>
                             </button>
 
-                            <button type="button" onclick="setMedia('handycam', 120)" id="media-handycam" class="media-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10">
+                            <button type="button" onclick="setMedia('handycam', 120)" id="media-handycam" class="media-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
                                 <div class="flex items-center space-x-3">
-                                    <div class="w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon"><i class="fa-solid fa-check"></i></div>
+                                    <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
                                     <div>
                                         <div class="font-semibold text-white text-sm">Handycam Selfie - Video & Photos</div>
                                         <div class="text-xs text-gray-400">Wrist-mounted camera capturing your close-up reactions</div>
                                     </div>
                                 </div>
-                                <span class="font-bold text-accentCyan text-sm">£120</span>
+                                <span class="font-bold text-gray-300 text-sm">£120</span>
                             </button>
 
                             <button type="button" onclick="setMedia('ultimate', 199)" id="media-ultimate" class="media-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
@@ -329,12 +329,12 @@
                                         <div class="text-xs text-gray-400">Handycam selfie plus outside camera video & photos</div>
                                     </div>
                                 </div>
-                                <span class="font-bold text-accentCyan text-sm">£199</span>
+                                <span class="font-bold text-gray-300 text-sm">£199</span>
                             </button>
                         </div>
                     </div>
 
-                    <!-- Step 3: Risk & Comfort Profile (Balanced Default in the Middle) -->
+                    <!-- Step 3: Risk & Comfort Profile -->
                     <div>
                         <label class="block text-sm font-semibold text-white mb-3 flex items-center justify-between">
                             <span><span class="text-accentBlue font-bold mr-2">03.</span> Select Risk & Comfort Profile</span>
@@ -395,8 +395,8 @@
                                 <span id="summary-alt-price" class="font-semibold text-white">£275</span>
                             </div>
                             <div class="flex justify-between items-center">
-                                <span id="summary-media-text" class="text-gray-300">Handycam Selfie - Video & Photos</span>
-                                <span id="summary-media-price" class="font-semibold text-white">£120</span>
+                                <span id="summary-media-text" class="text-gray-300">No Media</span>
+                                <span id="summary-media-price" class="font-semibold text-white">£0</span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <span id="summary-profile-text" class="text-gray-300">Balanced & Adventurous</span>
@@ -413,7 +413,7 @@
                         <div class="pt-4 border-t border-skyLight/30 flex justify-between items-center">
                             <div>
                                 <span class="text-xs text-gray-400 block uppercase tracking-wider">Total Investment</span>
-                                <span class="text-3xl font-extrabold text-white font-display" id="total-price">£395</span>
+                                <span class="text-3xl font-extrabold text-white font-display" id="total-price">£275</span>
                             </div>
                             <span class="text-xs text-accentCyan bg-accentBlue/10 px-3 py-1.5 rounded-lg border border-accentBlue/30">
                                 <i class="fa-solid fa-lock mr-1"></i> Secure Booking
@@ -566,11 +566,11 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Configurator State (Balanced is default for profile, Handycam for media)
+        // Configurator State (Default: No Media, Balanced profile)
         let currentAltitudePrice = 275;
         let currentAltitudeName = "10,000 ft Tandem";
-        let currentMediaPrice = 120;
-        let currentMediaName = "Handycam Selfie - Video & Photos";
+        let currentMediaPrice = 0;
+        let currentMediaName = "No Media";
         let currentProfilePrice = 0;
         let currentProfileName = "Balanced & Adventurous";
 
