@@ -36,7 +36,7 @@
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3, h4, h5, h6, .font-display { font-family: 'Outfit', sans-serif; }
         .hero-bg {
-            background: linear-gradient(135deg, rgba(11, 19, 43, 0.85) 0%, rgba(28, 37, 65, 0.75) 100%), url('https://images.unsplash.com/photo-1521679144660-2e458f37e4f4?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+            background: linear-gradient(135deg, rgba(11, 19, 43, 0.85) 0%, rgba(28, 37, 65, 0.75) 100%), url('images/door.jpg') center/cover no-repeat;
         }
         .glass-card {
             background: rgba(28, 37, 65, 0.7);
@@ -173,7 +173,7 @@
         </div>
     </header>
 
-    <!-- Tailored For Every Mindset (Using your nervous.jpg image) -->
+    <!-- Tailored For Every Mindset (Using your exact image folder files) -->
     <section id="approach" class="py-24 bg-skyMid/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
@@ -182,10 +182,10 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Nervous / First Timers (Using http://tailoredskydive.com/nervous.jpg) -->
+                <!-- Nervous / First Timers (images/selfie.jpg) -->
                 <div class="glass-card rounded-2xl overflow-hidden relative hover:border-accentBlue/50 transition group flex flex-col justify-between">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="http://tailoredskydive.com/nervous.jpg" alt="Nervous First Timer Support" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/selfie.jpg" alt="Nervous First Timer Support" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-skyDark via-transparent to-transparent"></div>
                     </div>
                     <div class="p-8 pt-2">
@@ -203,10 +203,10 @@
                     </div>
                 </div>
 
-                <!-- Balanced & Adventurous -->
+                <!-- Balanced & Adventurous (images/exit.jpg) -->
                 <div class="glass-card rounded-2xl overflow-hidden relative hover:border-accentBlue/50 transition group flex flex-col justify-between">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1521679144660-2e458f37e4f4?auto=format&fit=crop&w=600&q=80" alt="Balanced Adventurous" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/exit.jpg" alt="Balanced Adventurous" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-skyDark via-transparent to-transparent"></div>
                     </div>
                     <div class="p-8 pt-2">
@@ -224,10 +224,10 @@
                     </div>
                 </div>
 
-                <!-- Extreme Adrenaline -->
+                <!-- Extreme Adrenaline (images/extreme.jpg) -->
                 <div class="glass-card rounded-2xl overflow-hidden relative hover:border-skyGold/50 transition group flex flex-col justify-between">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Extreme Adrenaline" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="images/extreme.jpg" alt="Extreme Adrenaline" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-skyDark via-transparent to-transparent"></div>
                     </div>
                     <div class="p-8 pt-2">
@@ -292,7 +292,7 @@
                         </div>
                     </div>
 
-                    <!-- Step 2: Media Package (Default: No Media) -->
+                    <!-- Step 2: Media Package -->
                     <div>
                         <label class="block text-sm font-semibold text-white mb-3 flex items-center justify-between">
                             <span><span class="text-accentBlue font-bold mr-2">02.</span> Select Media Package</span>
@@ -341,7 +341,6 @@
                             <span class="text-xs text-gray-400 font-normal">Choose your preferred style</span>
                         </label>
                         <div class="space-y-3">
-                            <!-- Left: Nervous -->
                             <button type="button" onclick="setProfile('Nervous / First-Timer', 0)" id="profile-nervous" class="profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
@@ -353,7 +352,6 @@
                                 <span class="font-bold text-gray-300 text-xs bg-skyLight/30 px-2 py-1 rounded">Supportive</span>
                             </button>
 
-                            <!-- Middle: Balanced (Default) -->
                             <button type="button" onclick="setProfile('Balanced & Adventurous', 0)" id="profile-balanced" class="profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon"><i class="fa-solid fa-check"></i></div>
@@ -365,7 +363,6 @@
                                 <span class="font-bold text-accentCyan text-xs bg-accentBlue/20 px-2 py-1 rounded">Default</span>
                             </button>
 
-                            <!-- Right: Extreme -->
                             <button type="button" onclick="setProfile('Extreme & High Adrenaline', 0)" id="profile-extreme" class="profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
@@ -437,14 +434,14 @@
         </div>
     </section>
 
-    <!-- Meet Rich Taylor -->
+    <!-- Meet Rich Taylor (Using images/self.jpg) -->
     <section id="rich" class="py-24 bg-skyMid/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-5 space-y-6">
                 <div class="relative">
                     <div class="absolute -inset-2 bg-gradient-to-r from-accentBlue to-skyLight rounded-3xl blur-lg opacity-30"></div>
                     <div class="relative glass-card p-4 rounded-3xl border border-accentBlue/30">
-                        <img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=800&q=80" alt="Rich Taylor - Skydive Instructor" class="rounded-2xl w-full h-[400px] object-cover">
+                        <img src="images/self.jpg" alt="Rich Taylor - Skydive Instructor" class="rounded-2xl w-full h-[400px] object-cover">
                     </div>
                 </div>
             </div>
@@ -473,7 +470,7 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- Testimonials (Using images/parachute.jpg and external.jpg in background/context) -->
     <section id="testimonials" class="py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
