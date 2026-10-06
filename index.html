@@ -43,6 +43,10 @@
             backdrop-filter: blur(12px);
             border: 1px solid rgba(144, 224, 239, 0.15);
         }
+        .step-box {
+            background: rgba(11, 19, 43, 0.5);
+            border: 1px solid rgba(58, 80, 107, 0.4);
+        }
     </style>
 </head>
 <body class="bg-skyDark text-gray-100 antialiased selection:bg-accentBlue selection:text-skyDark">
@@ -127,16 +131,16 @@
                 <!-- Trust Badges -->
                 <div class="grid grid-cols-3 gap-4 pt-8 border-t border-skyLight/30 text-gray-300 text-sm">
                     <div>
-                        <span class="block font-display font-bold text-2xl text-white">100%</span>
-                        <span class="text-xs text-gray-400">One-to-One with Rich</span>
+                        <span class="block font-display font-bold text-2xl text-white">3,500+</span>
+                        <span class="text-xs text-gray-400">Career Skydives</span>
                     </div>
                     <div>
-                        <span class="block font-display font-bold text-2xl text-white">Tailored</span>
-                        <span class="text-xs text-gray-400">Paced for Nervous Flyers</span>
+                        <span class="block font-display font-bold text-2xl text-white">Since 2012</span>
+                        <span class="text-xs text-gray-400">Professional Experience</span>
                     </div>
                     <div>
-                        <span class="block font-display font-bold text-2xl text-white">Bespoke</span>
-                        <span class="text-xs text-gray-400">Custom Risk Profiles</span>
+                        <span class="block font-display font-bold text-2xl text-white">Global</span>
+                        <span class="text-xs text-gray-400">Worldwide Dropzones</span>
                     </div>
                 </div>
             </div>
@@ -251,7 +255,7 @@
         </div>
     </section>
 
-    <!-- Interactive Jump Configurator / Calculator -->
+    <!-- Interactive Jump Configurator / Calculator with Clearly Separated Steps -->
     <section id="calculator" class="py-24 relative">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
@@ -262,17 +266,20 @@
 
             <div class="glass-card rounded-3xl p-6 sm:p-10 shadow-2xl border border-accentBlue/30 grid grid-cols-1 lg:grid-cols-12 gap-10">
                 
-                <!-- Left Configuration Column -->
+                <!-- Left Configuration Column with Separated Step Boxes -->
                 <div class="lg:col-span-7 space-y-8">
                     
                     <!-- Step 1: Altitude -->
-                    <div>
-                        <label class="block text-sm font-semibold text-white mb-3 flex items-center justify-between">
-                            <span><span class="text-accentBlue font-bold mr-2">01.</span> Select Your Altitude</span>
-                            <span class="text-xs text-gray-400 font-normal">Choose your freefall duration</span>
-                        </label>
+                    <div class="step-box p-6 rounded-2xl shadow-md">
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-skyLight/30">
+                            <span class="text-sm font-bold text-white uppercase tracking-wider flex items-center">
+                                <span class="w-7 h-7 rounded-lg bg-accentBlue text-skyDark flex items-center justify-center font-extrabold mr-2 text-xs">01</span>
+                                Select Your Altitude
+                            </span>
+                            <span class="text-xs text-gray-400">Freefall duration</span>
+                        </div>
                         <div class="grid grid-cols-2 gap-4">
-                            <button type="button" onclick="setAltitude(10000, 275)" id="alt-10k" class="alt-btn p-4 rounded-2xl border-2 text-left transition flex flex-col justify-between border-accentBlue bg-accentBlue/10">
+                            <button type="button" onclick="setAltitude(10000, 275)" id="alt-10k" class="alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-accentBlue bg-accentBlue/10">
                                 <div class="flex justify-between items-center w-full mb-2">
                                     <span class="font-display font-bold text-lg text-white">10,000 ft</span>
                                     <span class="w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon"><i class="fa-solid fa-check"></i></span>
@@ -281,7 +288,7 @@
                                 <span class="text-accentCyan font-bold text-sm mt-3">£275</span>
                             </button>
 
-                            <button type="button" onclick="setAltitude(15000, 325)" id="alt-15k" class="alt-btn p-4 rounded-2xl border-2 text-left transition flex flex-col justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                            <button type="button" onclick="setAltitude(15000, 325)" id="alt-15k" class="alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
                                 <div class="flex justify-between items-center w-full mb-2">
                                     <span class="font-display font-bold text-lg text-white">15,000 ft</span>
                                     <span class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></span>
@@ -292,15 +299,18 @@
                         </div>
                     </div>
 
-                    <!-- Step 2: Media Package (With Pros & Cons and Photo Integration) -->
-                    <div>
-                        <label class="block text-sm font-semibold text-white mb-3 flex items-center justify-between">
-                            <span><span class="text-accentBlue font-bold mr-2">02.</span> Select Media Package</span>
-                            <span class="text-xs text-gray-400 font-normal">Capture your memories</span>
-                        </label>
+                    <!-- Step 2: Media Package -->
+                    <div class="step-box p-6 rounded-2xl shadow-md">
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-skyLight/30">
+                            <span class="text-sm font-bold text-white uppercase tracking-wider flex items-center">
+                                <span class="w-7 h-7 rounded-lg bg-accentBlue text-skyDark flex items-center justify-center font-extrabold mr-2 text-xs">02</span>
+                                Select Media Package
+                            </span>
+                            <span class="text-xs text-gray-400">Capture memories</span>
+                        </div>
                         <div class="space-y-4">
                             <!-- No Media -->
-                            <button type="button" onclick="setMedia('none', 0)" id="media-none" class="media-btn w-full p-4 rounded-2xl border-2 text-left transition flex flex-col border-accentBlue bg-accentBlue/10">
+                            <button type="button" onclick="setMedia('none', 0)" id="media-none" class="media-btn w-full p-4 rounded-xl border-2 text-left transition flex flex-col border-accentBlue bg-accentBlue/10">
                                 <div class="flex items-center justify-between w-full">
                                     <div class="flex items-center space-x-3">
                                         <div class="w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon"><i class="fa-solid fa-check"></i></div>
@@ -312,13 +322,13 @@
                                     <span class="font-bold text-accentCyan text-sm">£0</span>
                                 </div>
                                 <div class="mt-3 pt-3 border-t border-skyLight/30 grid grid-cols-2 gap-2 text-[11px]">
-                                    <div class="text-green-400"><i class="fa-solid fa-plus mr-1"></i> Pro: 100% present in the moment without cameras.</div>
-                                    <div class="text-red-400"><i class="fa-solid fa-minus mr-1"></i> Con: No photos or videos to share later.</div>
+                                    <div class="text-green-400"><i class="fa-solid fa-plus mr-1"></i> Pro: 100% present in the moment.</div>
+                                    <div class="text-red-400"><i class="fa-solid fa-minus mr-1"></i> Con: No media to share.</div>
                                 </div>
                             </button>
 
-                            <!-- Handycam Selfie ( parachute.jpg ) -->
-                            <button type="button" onclick="setMedia('handycam', 120)" id="media-handycam" class="media-btn w-full p-4 rounded-2xl border-2 text-left transition flex flex-col border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                            <!-- Handycam Selfie -->
+                            <button type="button" onclick="setMedia('handycam', 120)" id="media-handycam" class="media-btn w-full p-4 rounded-xl border-2 text-left transition flex flex-col border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
                                 <div class="flex items-center justify-between w-full">
                                     <div class="flex items-center space-x-3">
                                         <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
@@ -327,19 +337,19 @@
                                                 <span>Handycam Selfie - Video & Photos</span>
                                                 <span class="text-[10px] bg-accentBlue/20 text-accentCyan px-2 py-0.5 rounded"> parachute.jpg style</span>
                                             </div>
-                                            <div class="text-xs text-gray-400">Wrist-mounted camera capturing your close-up reactions</div>
+                                            <div class="text-xs text-gray-400">Wrist-mounted camera close-up reactions</div>
                                         </div>
                                     </div>
                                     <span class="font-bold text-gray-300 text-sm">£120</span>
                                 </div>
                                 <div class="mt-3 pt-3 border-t border-skyLight/30 grid grid-cols-2 gap-2 text-[11px]">
-                                    <div class="text-green-400"><i class="fa-solid fa-plus mr-1"></i> Pro: Intimate close-ups of your facial expressions & canopy ride.</div>
-                                    <div class="text-red-400"><i class="fa-solid fa-minus mr-1"></i> Con: Doesn't capture your full body in freefall.</div>
+                                    <div class="text-green-400"><i class="fa-solid fa-plus mr-1"></i> Pro: Intimate facial expressions & canopy ride.</div>
+                                    <div class="text-red-400"><i class="fa-solid fa-minus mr-1"></i> Con: No full-body freefall shots.</div>
                                 </div>
                             </button>
 
-                            <!-- Ultimate Package ( external.jpg ) -->
-                            <button type="button" onclick="setMedia('ultimate', 199)" id="media-ultimate" class="media-btn w-full p-4 rounded-2xl border-2 text-left transition flex flex-col border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                            <!-- Ultimate Package -->
+                            <button type="button" onclick="setMedia('ultimate', 199)" id="media-ultimate" class="media-btn w-full p-4 rounded-xl border-2 text-left transition flex flex-col border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
                                 <div class="flex items-center justify-between w-full">
                                     <div class="flex items-center space-x-3">
                                         <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
@@ -354,7 +364,7 @@
                                     <span class="font-bold text-gray-300 text-sm">£199</span>
                                 </div>
                                 <div class="mt-3 pt-3 border-t border-skyLight/30 grid grid-cols-2 gap-2 text-[11px]">
-                                    <div class="text-green-400"><i class="fa-solid fa-plus mr-1"></i> Pro: Full cinematic angles showing you and Rich in freefall.</div>
+                                    <div class="text-green-400"><i class="fa-solid fa-plus mr-1"></i> Pro: Full cinematic outside angles.</div>
                                     <div class="text-red-400"><i class="fa-solid fa-minus mr-1"></i> Con: Higher investment.</div>
                                 </div>
                             </button>
@@ -362,13 +372,16 @@
                     </div>
 
                     <!-- Step 3: Risk & Comfort Profile -->
-                    <div>
-                        <label class="block text-sm font-semibold text-white mb-3 flex items-center justify-between">
-                            <span><span class="text-accentBlue font-bold mr-2">03.</span> Select Risk & Comfort Profile</span>
-                            <span class="text-xs text-gray-400 font-normal">Choose your preferred style</span>
-                        </label>
+                    <div class="step-box p-6 rounded-2xl shadow-md">
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-skyLight/30">
+                            <span class="text-sm font-bold text-white uppercase tracking-wider flex items-center">
+                                <span class="w-7 h-7 rounded-lg bg-accentBlue text-skyDark flex items-center justify-center font-extrabold mr-2 text-xs">03</span>
+                                Select Risk & Comfort Profile
+                            </span>
+                            <span class="text-xs text-gray-400">Preferred style</span>
+                        </div>
                         <div class="space-y-3">
-                            <button type="button" onclick="setProfile('Nervous / First-Timer', 0)" id="profile-nervous" class="profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                            <button type="button" onclick="setProfile('Nervous / First-Timer', 0)" id="profile-nervous" class="profile-btn w-full p-4 rounded-xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
                                     <div>
@@ -379,7 +392,7 @@
                                 <span class="font-bold text-gray-300 text-xs bg-skyLight/30 px-2 py-1 rounded">Supportive</span>
                             </button>
 
-                            <button type="button" onclick="setProfile('Balanced & Adventurous', 0)" id="profile-balanced" class="profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10">
+                            <button type="button" onclick="setProfile('Balanced & Adventurous', 0)" id="profile-balanced" class="profile-btn w-full p-4 rounded-xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon"><i class="fa-solid fa-check"></i></div>
                                     <div>
@@ -390,7 +403,7 @@
                                 <span class="font-bold text-accentCyan text-xs bg-accentBlue/20 px-2 py-1 rounded">Default</span>
                             </button>
 
-                            <button type="button" onclick="setProfile('Extreme & High Adrenaline', 0)" id="profile-extreme" class="profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                            <button type="button" onclick="setProfile('Extreme & High Adrenaline', 0)" id="profile-extreme" class="profile-btn w-full p-4 rounded-xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
                                     <div>
@@ -406,7 +419,7 @@
                 </div>
 
                 <!-- Right Summary Column -->
-                <div class="lg:col-span-5 flex flex-col justify-between bg-skyDark/60 p-6 sm:p-8 rounded-2xl border border-skyLight/30">
+                <div class="lg:col-span-5 flex flex-col justify-between bg-skyDark/60 p-6 sm:p-8 rounded-2xl border border-skyLight/30 sticky top-28 h-fit">
                     <div>
                         <h3 class="text-lg font-bold text-white mb-6 pb-4 border-b border-skyLight/30 flex items-center justify-between">
                             <span>Your Custom Jump</span>
@@ -461,7 +474,7 @@
         </div>
     </section>
 
-    <!-- Meet Rich Taylor -->
+    <!-- Meet Rich Taylor (Updated with 3,500+ skydives, 2012 start, worldwide experience) -->
     <section id="rich" class="py-24 bg-skyMid/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-5 space-y-6">
@@ -477,20 +490,20 @@
                 <span class="text-accentBlue text-xs font-bold uppercase tracking-widest bg-accentBlue/10 px-3.5 py-1 rounded-full">Meet Your Instructor</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Hi, I'm Rich Taylor.</h2>
                 <p class="text-lg text-gray-300 font-light leading-relaxed">
-                    As a dedicated tandem skydiving instructor in the UK, I created <strong class="text-white font-medium">Tailored Skydive</strong> to strip away the impersonal, conveyor-belt feel of large commercial dropzones. 
+                    I started my skydiving journey back in <strong class="text-white font-medium">2012</strong>, and since then I have accumulated over <strong class="text-white font-medium">3,500 skydives</strong> jumping at dropzones all over the world.
                 </p>
                 <p class="text-gray-300 text-sm leading-relaxed">
-                    When you jump with me, you aren't just a ticket number. From your initial booking inquiry right through to the equipment fitting, the aircraft ride, the incredible freefall, and sending your edited media—<strong class="text-white">I am with you every step of the way.</strong>
+                    I created <strong class="text-white">Tailored Skydive</strong> because I believe tandem skydiving should be an extraordinary, personal experience—not an assembly line. When you jump with me, you aren't just a ticket number. From your initial booking inquiry right through to the equipment fitting, the aircraft ride, the incredible freefall, and sending your edited media, <strong class="text-white">I am with you every step of the way.</strong>
                 </p>
 
                 <div class="grid grid-cols-2 gap-6 pt-4">
                     <div class="glass-card p-4 rounded-2xl border border-skyLight/30">
-                        <div class="text-accentBlue font-bold text-xl mb-1"><i class="fa-solid fa-shield-halved mr-2"></i>UK Certified</div>
-                        <p class="text-xs text-gray-300">Fully licensed senior instructor with thousands of safe tandem descents.</p>
+                        <div class="text-accentBlue font-bold text-xl mb-1"><i class="fa-solid fa-parachute-box mr-2"></i>3,500+ Skydives</div>
+                        <p class="text-xs text-gray-300">Extensive professional experience spanning international dropzones since 2012.</p>
                     </div>
                     <div class="glass-card p-4 rounded-2xl border border-skyLight/30">
                         <div class="text-accentBlue font-bold text-xl mb-1"><i class="fa-solid fa-handshake mr-2"></i>100% Personal</div>
-                        <p class="text-xs text-gray-300">No passing off to strangers; I brief you, jump with you, and debrief you.</p>
+                        <p class="text-xs text-gray-300">No passing off to strangers; I brief you, jump with you, and debrief you personally.</p>
                     </div>
                 </div>
             </div>
@@ -601,19 +614,19 @@
             const btn15k = document.getElementById('alt-15k');
 
             if(alt === 10000) {
-                btn10k.className = "alt-btn p-4 rounded-2xl border-2 text-left transition flex flex-col justify-between border-accentBlue bg-accentBlue/10";
+                btn10k.className = "alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-accentBlue bg-accentBlue/10";
                 btn10k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
                 btn10k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
 
-                btn15k.className = "alt-btn p-4 rounded-2xl border-2 text-left transition flex flex-col justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn15k.className = "alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
                 btn15k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
                 btn15k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
             } else {
-                btn15k.className = "alt-btn p-4 rounded-2xl border-2 text-left transition flex flex-col justify-between border-accentBlue bg-accentBlue/10";
+                btn15k.className = "alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-accentBlue bg-accentBlue/10";
                 btn15k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
                 btn15k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
 
-                btn10k.className = "alt-btn p-4 rounded-2xl border-2 text-left transition flex flex-col justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn10k.className = "alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
                 btn10k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
                 btn10k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
             }
@@ -629,7 +642,7 @@
             const btnUltimate = document.getElementById('media-ultimate');
 
             [btnNone, btnHandycam, btnUltimate].forEach(btn => {
-                btn.className = "media-btn w-full p-4 rounded-2xl border-2 text-left transition flex flex-col border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn.className = "media-btn w-full p-4 rounded-xl border-2 text-left transition flex flex-col border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
                 btn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
             });
 
@@ -645,7 +658,7 @@
                 currentMediaName = "Ultimate Package (Cinematic)";
             }
 
-            activeBtn.className = "media-btn w-full p-4 rounded-2xl border-2 text-left transition flex flex-col border-accentBlue bg-accentBlue/10";
+            activeBtn.className = "media-btn w-full p-4 rounded-xl border-2 text-left transition flex flex-col border-accentBlue bg-accentBlue/10";
             activeBtn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
 
             updateSummary();
@@ -660,7 +673,7 @@
             const btnExtreme = document.getElementById('profile-extreme');
 
             [btnNervous, btnBalanced, btnExtreme].forEach(btn => {
-                btn.className = "profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn.className = "profile-btn w-full p-4 rounded-xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
                 btn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
             });
 
@@ -669,7 +682,7 @@
             else if(profileName.includes('Balanced')) activeBtn = btnBalanced;
             else activeBtn = btnExtreme;
 
-            activeBtn.className = "profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10";
+            activeBtn.className = "profile-btn w-full p-4 rounded-xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10";
             activeBtn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
 
             updateSummary();
