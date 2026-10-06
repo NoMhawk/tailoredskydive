@@ -346,4 +346,339 @@
                                 <div class="flex items-center space-x-3">
                                     <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
                                     <div>
-                                        <div class="font-semibold text-white text-
+                                        <div class="font-semibold text-white text-sm">Nervous / First-Timer</div>
+                                        <div class="text-xs text-gray-400">Extra reassurance, unhurried pacing, calming briefings</div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-gray-300 text-xs bg-skyLight/30 px-2 py-1 rounded">Supportive</span>
+                            </button>
+
+                            <!-- Middle: Balanced (Default) -->
+                            <button type="button" onclick="setProfile('Balanced & Adventurous', 0)" id="profile-balanced" class="profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon"><i class="fa-solid fa-check"></i></div>
+                                    <div>
+                                        <div class="font-semibold text-white text-sm">Balanced & Adventurous</div>
+                                        <div class="text-xs text-gray-400">Standard energised briefing focused on pure fun and smooth flight</div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-accentCyan text-xs bg-accentBlue/20 px-2 py-1 rounded">Default</span>
+                            </button>
+
+                            <!-- Right: Extreme -->
+                            <button type="button" onclick="setProfile('Extreme & High Adrenaline', 0)" id="profile-extreme" class="profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
+                                    <div>
+                                        <div class="font-semibold text-white text-sm">Extreme & High Adrenaline</div>
+                                        <div class="text-xs text-gray-400">High-speed canopy turns, aggressive freefall, and maximum G-force</div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-skyGold text-xs bg-skyGold/10 px-2 py-1 rounded">Thrill</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Summary Column -->
+                <div class="lg:col-span-5 flex flex-col justify-between bg-skyDark/60 p-6 sm:p-8 rounded-2xl border border-skyLight/30">
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-6 pb-4 border-b border-skyLight/30 flex items-center justify-between">
+                            <span>Your Custom Jump</span>
+                            <i class="fa-solid fa-receipt text-accentBlue"></i>
+                        </h3>
+
+                        <div class="space-y-4 text-sm mb-8">
+                            <div class="flex justify-between items-center">
+                                <span id="summary-alt-text" class="text-gray-300">10,000 ft Tandem</span>
+                                <span id="summary-alt-price" class="font-semibold text-white">£275</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span id="summary-media-text" class="text-gray-300">Handycam Selfie - Video & Photos</span>
+                                <span id="summary-media-price" class="font-semibold text-white">£120</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span id="summary-profile-text" class="text-gray-300">Balanced & Adventurous</span>
+                                <span id="summary-profile-price" class="font-semibold text-white">Included</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-300">1-on-1 Rich Taylor Coaching</span>
+                                <span class="font-semibold text-accentCyan">Included</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="pt-4 border-t border-skyLight/30 flex justify-between items-center">
+                            <div>
+                                <span class="text-xs text-gray-400 block uppercase tracking-wider">Total Investment</span>
+                                <span class="text-3xl font-extrabold text-white font-display" id="total-price">£395</span>
+                            </div>
+                            <span class="text-xs text-accentCyan bg-accentBlue/10 px-3 py-1.5 rounded-lg border border-accentBlue/30">
+                                <i class="fa-solid fa-lock mr-1"></i> Secure Booking
+                            </span>
+                        </div>
+
+                        <!-- Booking Inquiry Form -->
+                        <form onsubmit="submitBooking(event)" class="space-y-3">
+                            <input type="text" id="book-name" placeholder="Your Full Name" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
+                            <input type="email" id="book-email" placeholder="Your Email Address" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
+                            <input type="tel" id="book-phone" placeholder="Phone Number" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
+                            <button type="submit" class="w-full bg-accentBlue hover:bg-accentCyan text-skyDark font-bold py-3.5 rounded-xl transition shadow-lg shadow-accentBlue/20 text-center">
+                                Request Booking with Rich
+                            </button>
+                        </form>
+                        <p class="text-[11px] text-gray-400 text-center">Rich will personally review your request and get back to you within 24 hours.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Rich Taylor -->
+    <section id="rich" class="py-24 bg-skyMid/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 space-y-6">
+                <div class="relative">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-accentBlue to-skyLight rounded-3xl blur-lg opacity-30"></div>
+                    <div class="relative glass-card p-4 rounded-3xl border border-accentBlue/30">
+                        <img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=800&q=80" alt="Rich Taylor - Skydive Instructor" class="rounded-2xl w-full h-[400px] object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 space-y-6">
+                <span class="text-accentBlue text-xs font-bold uppercase tracking-widest bg-accentBlue/10 px-3.5 py-1 rounded-full">Meet Your Instructor</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Hi, I'm Rich Taylor.</h2>
+                <p class="text-lg text-gray-300 font-light leading-relaxed">
+                    As a dedicated tandem skydiving instructor in the UK, I created <strong class="text-white font-medium">Tailored Skydive</strong> to strip away the impersonal, conveyor-belt feel of large commercial dropzones. 
+                </p>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    When you jump with me, you aren't just a ticket number. From your initial booking inquiry right through to the equipment fitting, the aircraft ride, the incredible freefall, and sending your edited media—<strong class="text-white">I am with you every step of the way.</strong>
+                </p>
+
+                <div class="grid grid-cols-2 gap-6 pt-4">
+                    <div class="glass-card p-4 rounded-2xl border border-skyLight/30">
+                        <div class="text-accentBlue font-bold text-xl mb-1"><i class="fa-solid fa-shield-halved mr-2"></i>UK Certified</div>
+                        <p class="text-xs text-gray-300">Fully licensed senior instructor with thousands of safe tandem descents.</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl border border-skyLight/30">
+                        <div class="text-accentBlue font-bold text-xl mb-1"><i class="fa-solid fa-handshake mr-2"></i>100% Personal</div>
+                        <p class="text-xs text-gray-300">No passing off to strangers; I brief you, jump with you, and debrief you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-accentBlue text-xs font-bold uppercase tracking-widest bg-accentBlue/10 px-3.5 py-1 rounded-full">Client Stories</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">What Jumpers Say</h2>
+                <p class="text-gray-300">Read experiences from nervous first-timers and thrillseekers alike.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between border border-skyLight/30">
+                    <div class="space-y-4">
+                        <div class="flex text-skyGold space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic">"I was absolutely terrified of heights. Rich spent so much time explaining everything calmly before we got in the plane. By the time we exited at 10,000ft, I felt completely secure. Absolute game-changer!"</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-skyLight/30 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-accentBlue/20 text-accentBlue flex items-center justify-center font-bold">SC</div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Sarah Clarke</div>
+                            <div class="text-xs text-gray-400">10,000ft First-Timer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between border border-skyLight/30">
+                    <div class="space-y-4">
+                        <div class="flex text-skyGold space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic">"Booked the 15k jump with the Ultimate package. Rich's attention to detail and professional media delivery was top notch. The outside camera footage captured my exact reaction. Worth every single penny."</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-skyLight/30 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-accentBlue/20 text-accentBlue flex items-center justify-center font-bold">DM</div>
+                        <div>
+                            <div class="font-bold text-white text-sm">David Miller</div>
+                            <div class="text-xs text-gray-400">15,000ft Thrillseeker</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between border border-skyLight/30">
+                    <div class="space-y-4">
+                        <div class="flex text-skyGold space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic">"As someone looking for a custom experience for a milestone birthday, Rich delivered beyond expectations. Discrete, punctual, highly professional, and an unforgettable jump."</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-skyLight/30 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-skyGold/20 text-skyGold flex items-center justify-center font-bold">ET</div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Emma Thompson</div>
+                            <div class="text-xs text-gray-400">Custom Booking</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-skyDark border-t border-skyLight/30 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-accentBlue to-skyLight flex items-center justify-center text-skyDark font-bold text-sm">
+                    <i class="fa-solid fa-parachute-box"></i>
+                </div>
+                <span class="font-display font-bold text-lg text-white">TAILORED<span class="text-accentBlue">SKYDIVE</span></span>
+            </div>
+            <div class="text-xs text-gray-400 text-center md:text-left">
+                &copy; 2026 Tailored Skydive (Rich Taylor). All rights reserved. Professional UK Tandem Skydiving Instructor.
+            </div>
+            <div class="flex space-x-4 text-gray-400 text-sm">
+                <a href="#" class="hover:text-accentBlue transition"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-accentBlue transition"><i class="fa-brands fa-facebook text-lg"></i></a>
+                <a href="#" class="hover:text-accentBlue transition"><i class="fa-brands fa-youtube text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Calculator and Navigation -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Configurator State (Balanced is default for profile, Handycam for media)
+        let currentAltitudePrice = 275;
+        let currentAltitudeName = "10,000 ft Tandem";
+        let currentMediaPrice = 120;
+        let currentMediaName = "Handycam Selfie - Video & Photos";
+        let currentProfilePrice = 0;
+        let currentProfileName = "Balanced & Adventurous";
+
+        function setAltitude(alt, price) {
+            currentAltitudePrice = price;
+            currentAltitudeName = alt.toLocaleString() + " ft Tandem";
+
+            const btn10k = document.getElementById('alt-10k');
+            const btn15k = document.getElementById('alt-15k');
+
+            if(alt === 10000) {
+                btn10k.className = "alt-btn p-4 rounded-2xl border-2 text-left transition flex flex-col justify-between border-accentBlue bg-accentBlue/10";
+                btn10k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
+                btn10k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
+
+                btn15k.className = "alt-btn p-4 rounded-2xl border-2 text-left transition flex flex-col justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn15k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
+                btn15k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
+            } else {
+                btn15k.className = "alt-btn p-4 rounded-2xl border-2 text-left transition flex flex-col justify-between border-accentBlue bg-accentBlue/10";
+                btn15k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
+                btn15k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
+
+                btn10k.className = "alt-btn p-4 rounded-2xl border-2 text-left transition flex flex-col justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn10k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
+                btn10k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
+            }
+
+            updateSummary();
+        }
+
+        function setMedia(type, price) {
+            currentMediaPrice = price;
+            
+            const btnNone = document.getElementById('media-none');
+            const btnHandycam = document.getElementById('media-handycam');
+            const btnUltimate = document.getElementById('media-ultimate');
+
+            [btnNone, btnHandycam, btnUltimate].forEach(btn => {
+                btn.className = "media-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
+            });
+
+            let activeBtn;
+            if(type === 'none') {
+                activeBtn = btnNone;
+                currentMediaName = "No Media";
+            } else if(type === 'handycam') {
+                activeBtn = btnHandycam;
+                currentMediaName = "Handycam Selfie - Video & Photos";
+            } else {
+                activeBtn = btnUltimate;
+                currentMediaName = "Ultimate Package (Cinematic)";
+            }
+
+            activeBtn.className = "media-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10";
+            activeBtn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
+
+            updateSummary();
+        }
+
+        function setProfile(profileName, price) {
+            currentProfilePrice = price;
+            currentProfileName = profileName;
+
+            const btnNervous = document.getElementById('profile-nervous');
+            const btnBalanced = document.getElementById('profile-balanced');
+            const btnExtreme = document.getElementById('profile-extreme');
+
+            [btnNervous, btnBalanced, btnExtreme].forEach(btn => {
+                btn.className = "profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
+            });
+
+            let activeBtn;
+            if(profileName.includes('Nervous')) activeBtn = btnNervous;
+            else if(profileName.includes('Balanced')) activeBtn = btnBalanced;
+            else activeBtn = btnExtreme;
+
+            activeBtn.className = "profile-btn w-full p-4 rounded-2xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10";
+            activeBtn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
+
+            updateSummary();
+        }
+
+        function updateSummary() {
+            document.getElementById('summary-alt-text').innerText = currentAltitudeName;
+            document.getElementById('summary-alt-price').innerText = '£' + currentAltitudePrice;
+
+            document.getElementById('summary-media-text').innerText = currentMediaName;
+            document.getElementById('summary-media-price').innerText = '£' + currentMediaPrice;
+
+            document.getElementById('summary-profile-text').innerText = currentProfileName;
+            document.getElementById('summary-profile-price').innerText = 'Included';
+
+            const total = currentAltitudePrice + currentMediaPrice + currentProfilePrice;
+            document.getElementById('total-price').innerText = '£' + total;
+        }
+
+        function submitBooking(e) {
+            e.preventDefault();
+            const name = document.getElementById('book-name').value;
+            const email = document.getElementById('book-email').value;
+            const phone = document.getElementById('book-phone').value;
+            const total = currentAltitudePrice + currentMediaPrice + currentProfilePrice;
+
+            alert(`Thank you, ${name}! Your booking request for the ${currentAltitudeName} with ${currentMediaName} and ${currentProfileName} (Total: £${total}) has been prepared for Rich Taylor.`);
+        }
+    </script>
+</body>
+</html>
