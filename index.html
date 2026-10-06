@@ -471,24 +471,19 @@
                             </span>
                         </div>
 
-                        <!-- Option 1: Direct Email Form (Web3Forms configured for rich@tailoredskydive.com) -->
-                        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3">
-                            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-                            <input type="hidden" name="subject" value="New Devon Skydive Booking Request!">
-                            <input type="hidden" name="to" value="rich@tailoredskydive.com">
-                            <input type="hidden" id="form-package-details" name="package_details" value="Devon Dropzone | 10,000 ft Tandem, No Media, Balanced Profile (£275)">
-
-                            <input type="text" id="book-name" name="name" placeholder="Your Full Name" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
-                            <input type="email" id="book-email" name="email" placeholder="Your Email Address" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
-                            <input type="tel" id="book-phone" name="phone" placeholder="Phone Number" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
+                        <!-- Contact Inputs for Email & WhatsApp -->
+                        <div class="space-y-3">
+                            <input type="text" id="book-name" placeholder="Your Full Name" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
+                            <input type="tel" id="book-phone" placeholder="Phone Number" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
                             
-                            <button type="submit" class="w-full bg-accentBlue hover:bg-accentCyan text-skyDark font-bold py-3.5 rounded-xl transition shadow-lg shadow-accentBlue/20 text-center flex items-center justify-center space-x-2">
-                                <i class="fa-solid fa-envelope"></i>
+                            <!-- Send via Email Button (Opens native email client directly to rich@tailoredskydive.com) -->
+                            <button type="button" onclick="sendViaEmail()" class="w-full bg-accentBlue hover:bg-accentCyan text-skyDark font-bold py-3.5 rounded-xl transition shadow-lg shadow-accentBlue/20 text-center flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-envelope text-lg"></i>
                                 <span>Send Booking Request via Email</span>
                             </button>
-                        </form>
+                        </div>
 
-                        <!-- Option 2: Send via WhatsApp Button (+44 7817 976703) -->
+                        <!-- Send via WhatsApp Button (+44 7817 976703) -->
                         <div class="relative flex py-2 items-center">
                             <div class="flex-grow border-t border-skyLight/30"></div>
                             <span class="flex-shrink mx-4 text-gray-400 text-xs uppercase tracking-widest">or</span>
@@ -767,9 +762,34 @@
 
             const total = currentAltitudePrice + currentMediaPrice + currentProfilePrice;
             document.getElementById('total-price').innerText = '£' + total;
+        }
 
-            const summaryString = `Devon Dropzone | ${currentAltitudeName} | ${currentMediaName} | Profile: ${currentProfileName} | Total: £${total}`;
-            document.getElementById('form-package-details').value = summaryString;
+        function sendViaEmail() {
+            const name = document.getElementById('book-name').value.trim();
+            const phone = document.getElementById('book-phone').value.trim();
+
+            if(!name || !phone) {
+                alert("Please enter your Name and Phone Number before sending the email request.");
+                document.getElementById('book-name').focus();
+                return;
+            }
+
+            const total = currentAltitudePrice + currentMediaPrice + currentProfilePrice;
+            const emailSubject = encodeURIComponent(`New Devon Skydive Booking Request - ${name}`);
+            const emailBody = encodeURIComponent(
+                `Hi Rich,\n\nI would like to book a tandem skydive in Devon with you.\n\n` +
+                `--- BOOKING DETAILS ---\n` +
+                `Name: ${name}\n` +
+                `Phone: ${phone}\n` +
+                `Dropzone: Devon, UK\n` +
+                `Altitude: ${currentAltitudeName}\n` +
+                `Media Package: ${currentMediaName}\n` +
+                `Comfort Profile: ${currentProfileName}\n` +
+                `Total Investment: £${total}\n\n` +
+                `Please let me know your availability!`
+            );
+
+            window.location.href = `mailto:rich@tailoredskydive.com?subject=${emailSubject}&body=${emailBody}`;
         }
 
         function sendViaWhatsApp() {
