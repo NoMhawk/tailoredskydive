@@ -306,7 +306,7 @@
                                 <span class="w-7 h-7 rounded-lg bg-accentBlue text-skyDark flex items-center justify-center font-extrabold mr-2 text-xs">02</span>
                                 Select Media Package
                             </span>
-                            <span class="text-xs text-gray-400">Capture memories</span>
+                            <span class="text-xs text-gray-400">Capture memories (Click image to preview)</span>
                         </div>
                         <div class="space-y-4">
                             <!-- No Media -->
@@ -333,14 +333,19 @@
                                     <div class="flex items-center space-x-3">
                                         <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
                                         <div>
-                                            <div class="font-semibold text-white text-sm flex items-center gap-2">
-                                                <span>Handycam Selfie - Video & Photos</span>
-                                                <span class="text-[10px] bg-accentBlue/20 text-accentCyan px-2 py-0.5 rounded"> parachute.jpg style</span>
-                                            </div>
+                                            <div class="font-semibold text-white text-sm">Handycam Selfie - Video & Photos</div>
                                             <div class="text-xs text-gray-400">Wrist-mounted camera close-up reactions</div>
                                         </div>
                                     </div>
-                                    <span class="font-bold text-gray-300 text-sm">£120</span>
+                                    <div class="flex items-center space-x-3">
+                                        <div onclick="event.stopPropagation(); openModal('images/parachute.jpg', 'Handycam Selfie Angle (parachute.jpg)')" class="relative group cursor-pointer" title="Click to preview photo">
+                                            <img src="images/parachute.jpg" alt="Handycam Preview" class="w-12 h-10 object-cover rounded-lg border border-accentBlue/50 group-hover:scale-105 transition">
+                                            <div class="absolute inset-0 bg-black/40 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition text-white text-[10px]">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </div>
+                                        </div>
+                                        <span class="font-bold text-gray-300 text-sm">£120</span>
+                                    </div>
                                 </div>
                                 <div class="mt-3 pt-3 border-t border-skyLight/30 grid grid-cols-2 gap-2 text-[11px]">
                                     <div class="text-green-400"><i class="fa-solid fa-plus mr-1"></i> Pro: Intimate facial expressions & canopy ride.</div>
@@ -354,14 +359,19 @@
                                     <div class="flex items-center space-x-3">
                                         <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
                                         <div>
-                                            <div class="font-semibold text-white text-sm flex items-center gap-2">
-                                                <span>Ultimate Package (Cinematic)</span>
-                                                <span class="text-[10px] bg-skyGold/20 text-skyGold px-2 py-0.5 rounded"> external.jpg style</span>
-                                            </div>
+                                            <div class="font-semibold text-white text-sm">Ultimate Package (Cinematic)</div>
                                             <div class="text-xs text-gray-400">Handycam selfie plus outside camera video & photos</div>
                                         </div>
                                     </div>
-                                    <span class="font-bold text-gray-300 text-sm">£199</span>
+                                    <div class="flex items-center space-x-3">
+                                        <div onclick="event.stopPropagation(); openModal('images/external.jpg', 'Ultimate Cinematic Angle (external.jpg)')" class="relative group cursor-pointer" title="Click to preview photo">
+                                            <img src="images/external.jpg" alt="Ultimate Preview" class="w-12 h-10 object-cover rounded-lg border border-skyGold/50 group-hover:scale-105 transition">
+                                            <div class="absolute inset-0 bg-black/40 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition text-white text-[10px]">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </div>
+                                        </div>
+                                        <span class="font-bold text-gray-300 text-sm">£199</span>
+                                    </div>
                                 </div>
                                 <div class="mt-3 pt-3 border-t border-skyLight/30 grid grid-cols-2 gap-2 text-[11px]">
                                     <div class="text-green-400"><i class="fa-solid fa-plus mr-1"></i> Pro: Full cinematic outside angles.</div>
@@ -461,10 +471,11 @@
                             </span>
                         </div>
 
-                        <!-- Option 1: Direct Email Form -->
+                        <!-- Option 1: Direct Email Form (Web3Forms configured for rich@tailoredskydive.com) -->
                         <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3">
-                            <input type="hidden" name="apikey" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
                             <input type="hidden" name="subject" value="New Devon Skydive Booking Request!">
+                            <input type="hidden" name="to" value="rich@tailoredskydive.com">
                             <input type="hidden" id="form-package-details" name="package_details" value="Devon Dropzone | 10,000 ft Tandem, No Media, Balanced Profile (£275)">
 
                             <input type="text" id="book-name" name="name" placeholder="Your Full Name" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
@@ -477,7 +488,7 @@
                             </button>
                         </form>
 
-                        <!-- Option 2: Send via WhatsApp Button -->
+                        <!-- Option 2: Send via WhatsApp Button (+44 7817 976703) -->
                         <div class="relative flex py-2 items-center">
                             <div class="flex-grow border-t border-skyLight/30"></div>
                             <span class="flex-shrink mx-4 text-gray-400 text-xs uppercase tracking-widest">or</span>
@@ -496,6 +507,20 @@
             </div>
         </div>
     </section>
+
+    <!-- Photo Preview Lightbox Modal -->
+    <div id="photoModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-skyMid border border-skyLight/40 rounded-3xl max-w-2xl w-full p-6 relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl w-10 h-10 rounded-full bg-skyDark flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h4 id="modalTitle" class="text-white font-bold text-lg mb-4">Photo Preview</h4>
+            <div class="rounded-2xl overflow-hidden border border-accentBlue/30 mb-4 max-h-[60vh] flex items-center justify-center bg-black">
+                <img id="modalImg" src="" alt="Enlarged Preview" class="max-w-full max-h-[60vh] object-contain">
+            </div>
+            <p class="text-xs text-gray-400 text-center">Click anywhere outside or the X button to close preview.</p>
+        </div>
+    </div>
 
     <!-- Meet Rich Taylor -->
     <section id="rich" class="py-24 bg-skyMid/50">
@@ -614,12 +639,31 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Calculator and Actions -->
+    <!-- JavaScript for Calculator, Actions & Lightbox Modal -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Lightbox Modal Functions
+        function openModal(imgSrc, title) {
+            document.getElementById('modalImg').src = imgSrc;
+            document.getElementById('modalTitle').innerText = title;
+            const modal = document.getElementById('photoModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('photoModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        document.getElementById('photoModal').addEventListener('click', (e) => {
+            if(e.target.id === 'photoModal') closeModal();
         });
 
         let currentAltitudePrice = 275;
@@ -724,7 +768,6 @@
             const total = currentAltitudePrice + currentMediaPrice + currentProfilePrice;
             document.getElementById('total-price').innerText = '£' + total;
 
-            // Update hidden form field for email submission
             const summaryString = `Devon Dropzone | ${currentAltitudeName} | ${currentMediaName} | Profile: ${currentProfileName} | Total: £${total}`;
             document.getElementById('form-package-details').value = summaryString;
         }
@@ -736,8 +779,8 @@
 
             const message = `Hi Rich! I'd like to book a skydive in Devon:%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Dropzone:* Devon, UK%0A*Altitude:* ${currentAltitudeName}%0A*Media:* ${currentMediaName}%0A*Style:* ${currentProfileName}%0A*Total:* £${total}%0A%0APlease let me know your availability!`;
             
-            // Replace 447000000000 with your actual mobile number (without the leading zero, e.g. 447123456789)
-            const whatsappNumber = "447000000000"; 
+            // Your exact WhatsApp number: +44 7817 976703
+            const whatsappNumber = "447817976703"; 
             window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
         }
     </script>
