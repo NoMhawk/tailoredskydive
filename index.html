@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailored Skydive | Premium 1-on-1 Tandem Skydiving in Devon with Rich Taylor</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        skyDark: '#0B132B',
+                        skyMid: '#1C2541',
+                        skyLight: '#3A506B',
+                        accentBlue: '#00B4D8',
+                        accentCyan: '#90E0EF',
+                        skyGold: '#D4AF37'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-display { font-family: 'Outfit', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(11, 19, 43, 0.9) 0%, rgba(28, 37, 65, 0.8) 100%), url('images/door.jpg') center/cover no-repeat;
+        }
+        .glass-card {
+            background: rgba(28, 37, 65, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(144, 224, 239, 0.15);
+        }
+        .step-box {
+            background: rgba(11, 19, 43, 0.6);
+            border: 1px solid rgba(58, 80, 107, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-skyDark text-gray-100 antialiased selection:bg-accentBlue selection:text-skyDark">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-skyDark via-accentBlue to-skyDark text-skyDark text-xs md:text-sm font-semibold py-2 px-4 text-center tracking-wide">
+        <i class="fa-solid fa-location-dot mr-2"></i> Exclusively Hand-Crafted Luxury Tandem Skydives at <a href="https://www.skydivesouthwest.com" target="_blank" class="underline hover:text-white">Skydive South West</a> (Dunkeswell) with Rich Taylor
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-skyDark/95 backdrop-blur-md border-b border-skyLight/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-accentBlue to-skyLight flex items-center justify-center text-skyDark font-bold text-xl shadow-lg shadow-accentBlue/20">
+                    <i class="fa-solid fa-parachute-box"></i>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-xl tracking-tight text-white">TAILORED<span class="text-accentBlue">SKYDIVE</span></span>
+                    <span class="block text-[10px] tracking-widest text-gray-400 uppercase">Luxury Tandem Service by Rich Taylor</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#difference" class="hover:text-accentBlue transition">Why Tailored?</a>
+                <a href="#rich" class="hover:text-accentBlue transition">Meet Rich</a>
+                <a href="#testimonials" class="hover:text-accentBlue transition">Reviews</a>
+                <a href="#calculator" class="hover:text-accentBlue transition">Build Your Jump</a>
+                <a href="#faq" class="hover:text-accentBlue transition">FAQ</a>
+            </div>
+
+            <div class="hidden md:block">
+                <a href="#calculator" class="bg-accentBlue hover:bg-accentCyan text-skyDark font-semibold px-5 py-2.5 rounded-xl transition duration-200 shadow-lg shadow-accentBlue/20">
+                    Configure & Book
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-skyMid border-b border-skyLight/30 px-4 pt-2 pb-6 space-y-3">
+            <a href="#difference" class="block py-2 text-gray-200 hover:text-accentBlue">Why Tailored?</a>
+            <a href="#rich" class="block py-2 text-gray-200 hover:text-accentBlue">Meet Rich</a>
+            <a href="#testimonials" class="block py-2 text-gray-200 hover:text-accentBlue">Reviews</a>
+            <a href="#calculator" class="block py-2 text-gray-200 hover:text-accentBlue">Build Your Jump</a>
+            <a href="#faq" class="block py-2 text-gray-200 hover:text-accentBlue">FAQ</a>
+            <div class="pt-2">
+                <a href="#calculator" class="block text-center w-full bg-accentBlue text-skyDark font-semibold py-3 rounded-xl shadow">Configure & Book</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Straight to the point -->
+    <header class="hero-bg min-h-[90vh] flex items-center relative overflow-hidden py-16">
+        <div class="absolute inset-0 bg-gradient-to-t from-skyDark via-transparent to-transparent opacity-90"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-skyLight/30 border border-accentBlue/30 px-3.5 py-1.5 rounded-full text-xs font-medium text-accentCyan">
+                    <i class="fa-solid fa-star text-skyGold"></i>
+                    <span>Exclusively at Dunkeswell • 1-on-1 Private Tandem Service</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                    What is Tailored Skydive? <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-accentBlue to-accentCyan">Your Private 1-on-1 Jump.</span>
+                </h1>
+                
+                <p class="text-lg text-gray-300 max-w-2xl font-light leading-relaxed">
+                    Tailored Skydive is an <strong class="text-white font-medium">exclusive 1-on-1 boutique experience</strong> at Dunkeswell. Seasoned instructor <strong class="text-white font-medium">Rich Taylor</strong> personally guides you through your entire journey—from your booking inquiry to landing. Zero rushing and 100% personal attention.
+                </p>
+
+                <!-- Quick Value Comparison Box -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="glass-card p-4 rounded-2xl border border-accentBlue/30">
+                        <div class="text-accentBlue font-bold text-sm mb-1"><i class="fa-solid fa-circle-check mr-2"></i>Tailored Skydive (Rich)</div>
+                        <p class="text-xs text-gray-300">Dedicated 1-on-1 instructor, unhurried pacing, custom briefings, and personal media delivery.</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl border border-skyLight/30">
+                        <div class="text-skyCyan font-bold text-sm mb-1"><i class="fa-solid fa-heart mr-2"></i>Skydive South West</div>
+                        <p class="text-xs text-gray-300">Looking for a fantastic standard jump? Check out their brilliant, very well-priced 7,000ft skydive at <a href="https://www.skydivesouthwest.com" target="_blank" class="underline text-white font-medium">skydivesouthwest.com</a>!</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#calculator" class="bg-accentBlue hover:bg-accentCyan text-skyDark font-bold px-8 py-4 rounded-xl text-center transition shadow-xl shadow-accentBlue/25 flex items-center justify-center space-x-2">
+                        <span>Configure & Book Your Jump</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#rich" class="glass-card hover:bg-skyLight/40 text-white font-semibold px-8 py-4 rounded-xl text-center transition border border-skyLight/40 flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-user text-accentBlue"></i>
+                        <span>Meet Rich & His Story</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Quick Quote Card with Instant CTA -->
+            <div class="lg:col-span-5">
+                <div class="glass-card p-8 rounded-3xl shadow-2xl relative border border-accentBlue/30">
+                    <div class="absolute -top-3 -right-3 bg-skyGold text-skyDark text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                        Boutique Service
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">The Personal Guarantee</h3>
+                    <p class="text-sm text-gray-300 mb-6">Designed for first-timers, nervous flyers, or thrillseekers who want absolute safety and elite 1-on-1 coaching.</p>
+                    
+                    <ul class="space-y-3 text-sm text-gray-200 mb-6">
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accentBlue mt-1"></i>
+                            <span>Direct text & phone contact with Rich from day one.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accentBlue mt-1"></i>
+                            <span>Calm, unhurried briefings matched to your comfort level.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accentBlue mt-1"></i>
+                            <span>Stunning Dunkeswell dropzone views over Devon.</span>
+                        </li>
+                    </ul>
+
+                    <a href="#calculator" class="block w-full text-center bg-accentBlue hover:bg-accentCyan text-skyDark font-bold py-3.5 rounded-xl transition shadow-lg">
+                        Jump to Pricing & Configurator
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Meet Rich Taylor Early -->
+    <section id="rich" class="py-20 bg-skyMid/50 border-t border-skyLight/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5">
+                <div class="relative">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-accentBlue to-skyLight rounded-3xl blur-lg opacity-30"></div>
+                    <div class="relative glass-card p-4 rounded-3xl border border-accentBlue/30">
+                        <img src="images/self.jpg" alt="Rich Taylor - Skydive Instructor" class="rounded-2xl w-full h-[420px] object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 space-y-6">
+                <span class="text-accentBlue text-xs font-bold uppercase tracking-widest bg-accentBlue/10 px-3.5 py-1 rounded-full">The Person Behind The Brand</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Hi, I'm Rich Taylor.</h2>
+                <p class="text-lg text-gray-300 font-light leading-relaxed">
+                    My skydiving journey started right here at Dunkeswell with my very first tandem jump! With over <strong class="text-white font-medium">3,500 career skydives</strong> and a profound passion for personal coaching, safety, and precision, I am dedicated to making your experience unforgettable.
+                </p>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    I created <em>Tailored Skydive</em> because I love giving people my undivided attention, tailored pacing, and a relaxed, reassuring Devon experience from start to finish.
+                </p>
+
+                <div class="grid grid-cols-2 gap-4 pt-2">
+                    <div class="glass-card p-4 rounded-2xl border border-skyLight/30">
+                        <div class="text-accentBlue font-bold text-lg mb-1"><i class="fa-solid fa-heart-pulse mr-2"></i>Personal Coach</div>
+                        <p class="text-xs text-gray-300">Dedicated 1-on-1 attention and calming briefings.</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-2xl border border-skyLight/30">
+                        <div class="text-accentBlue font-bold text-lg mb-1"><i class="fa-solid fa-shield-heart mr-2"></i>3,500+ Jumps</div>
+                        <p class="text-xs text-gray-300">Over a decade of seasoned professional instruction.</p>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex gap-4">
+                    <a href="#calculator" class="bg-accentBlue hover:bg-accentCyan text-skyDark font-bold px-6 py-3 rounded-xl text-sm transition shadow">
+                        Book Your Jump with Rich
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews / Testimonials Brought Higher Up -->
+    <section id="testimonials" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-accentBlue text-xs font-bold uppercase tracking-widest bg-accentBlue/10 px-3.5 py-1 rounded-full">Trusted Experience</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">What Jumpers Say About Rich</h2>
+                <p class="text-gray-300 text-sm">Read unedited reviews from nervous first-timers and thrillseekers.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between border border-skyLight/30">
+                    <div class="space-y-4">
+                        <div class="flex text-skyGold space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic">"I was terrified of heights. Rich spent so much time calming me down before our exit at Dunkeswell. By 10k ft I felt completely secure. Absolute game-changer!"</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-skyLight/30 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-accentBlue/20 text-accentBlue flex items-center justify-center font-bold">SC</div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Sarah Clarke</div>
+                            <div class="text-xs text-gray-400">10,000ft First-Timer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between border border-skyLight/30">
+                    <div class="space-y-4">
+                        <div class="flex text-skyGold space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic">"Booked the 15k jump with the Ultimate package. Rich's attention to detail and media delivery was top notch. Captured my exact reactions. Worth every penny."</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-skyLight/30 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-accentBlue/20 text-accentBlue flex items-center justify-center font-bold">DM</div>
+                        <div>
+                            <div class="font-bold text-white text-sm">David Miller</div>
+                            <div class="text-xs text-gray-400">15,000ft Thrillseeker</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between border border-skyLight/30">
+                    <div class="space-y-4">
+                        <div class="flex text-skyGold space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic">"A custom milestone birthday experience at Dunkeswell. Rich delivered beyond expectations—discrete, punctual, highly professional, and unforgettable."</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-skyLight/30 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-skyGold/20 text-skyGold flex items-center justify-center font-bold">ET</div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Emma Thompson</div>
+                            <div class="text-xs text-gray-400">Custom Dunkeswell Booking</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="#calculator" class="inline-flex items-center space-x-2 text-accentCyan hover:text-white font-semibold text-sm transition">
+                    <span>Ready to experience it yourself? Configure your jump</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tailored Jump Styles -->
+    <section id="difference" class="py-20 bg-skyMid/50 border-t border-skyLight/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-accentBlue text-xs font-bold uppercase tracking-widest bg-accentBlue/10 px-3.5 py-1 rounded-full">Your Comfort Style</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Tailored For Your Mindset</h2>
+                <p class="text-gray-300 text-sm">Pick your preferred style when you book below.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Nervous -->
+                <div class="glass-card rounded-2xl overflow-hidden relative border border-skyLight/30 flex flex-col justify-between">
+                    <div class="h-44 overflow-hidden relative">
+                        <img src="images/selfie.jpg" alt="Nervous First Timer Support" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Nervous & First-Timers</h3>
+                        <p class="text-gray-300 text-xs leading-relaxed mb-4">Patient pacing, calming briefings, and zero rush. Perfect if you are apprehensive about heights.</p>
+                        <span class="text-accentCyan text-xs font-semibold uppercase">Supportive 1-on-1</span>
+                    </div>
+                </div>
+
+                <!-- Balanced -->
+                <div class="glass-card rounded-2xl overflow-hidden relative border border-accentBlue/40 flex flex-col justify-between">
+                    <div class="h-44 overflow-hidden relative">
+                        <img src="images/exit.jpg" alt="Balanced Adventurous" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Balanced & Adventurous</h3>
+                        <p class="text-gray-300 text-xs leading-relaxed mb-4">Energised pacing, breathtaking Devon views, and smooth canopy flight. The core custom experience.</p>
+                        <span class="text-accentCyan text-xs font-semibold uppercase">Most Popular</span>
+                    </div>
+                </div>
+
+                <!-- Extreme -->
+                <div class="glass-card rounded-2xl overflow-hidden relative border border-skyGold/40 flex flex-col justify-between">
+                    <div class="h-44 overflow-hidden relative">
+                        <img src="images/extreme.jpg" alt="Extreme Adrenaline" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="absolute top-4 right-4 text-skyGold bg-skyDark/80 px-2.5 py-1 rounded-full text-xs font-bold">Extreme</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Extreme Adrenaline</h3>
+                        <p class="text-gray-300 text-xs leading-relaxed mb-4">High-speed canopy turns, aggressive freefall manoeuvres, and maximum G-force action.</p>
+                        <span class="text-skyGold text-xs font-semibold uppercase">Maximum Thrill</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="#calculator" class="bg-accentBlue hover:bg-accentCyan text-skyDark font-bold px-8 py-3.5 rounded-xl text-sm transition shadow-lg">
+                    Build & Configure Your Jump Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Jump Configurator / Calculator -->
+    <section id="calculator" class="py-24 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-accentBlue text-xs font-bold uppercase tracking-widest bg-accentBlue/10 px-3.5 py-1 rounded-full">Interactive Booking Tool</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Configure Your Skydive</h2>
+                <p class="text-gray-300 text-sm">Design your custom luxury tandem package with Rich at Dunkeswell below. <br><span class="text-xs text-gray-400">Looking for a fantastic standard jump? Check out the brilliant, very well-priced 7,000ft option at <a href="https://www.skydivesouthwest.com" target="_blank" class="underline text-white font-medium">skydivesouthwest.com</a>! Tailored Skydive is for the exclusive 1-on-1 hand-crafted experience.</span></p>
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 sm:p-10 shadow-2xl border border-accentBlue/30 grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <!-- Left Configuration Column -->
+                <div class="lg:col-span-7 space-y-8">
+                    
+                    <!-- Step 1: Altitude -->
+                    <div class="step-box p-6 rounded-2xl shadow-md">
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-skyLight/30">
+                            <span class="text-sm font-bold text-white uppercase tracking-wider flex items-center">
+                                <span class="w-7 h-7 rounded-lg bg-accentBlue text-skyDark flex items-center justify-center font-extrabold mr-2 text-xs">01</span>
+                                Select Altitude
+                            </span>
+                            <span class="text-xs text-gray-400">Freefall duration</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button type="button" onclick="setAltitude(10000, 275)" id="alt-10k" class="alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-accentBlue bg-accentBlue/10">
+                                <div class="flex justify-between items-center w-full mb-2">
+                                    <span class="font-display font-bold text-lg text-white">10,000 ft</span>
+                                    <span class="w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon"><i class="fa-solid fa-check"></i></span>
+                                </div>
+                                <span class="text-xs text-gray-300">~30 sec freefall</span>
+                                <span class="text-accentCyan font-bold text-sm mt-3">£275</span>
+                            </button>
+
+                            <button type="button" onclick="setAltitude(15000, 325)" id="alt-15k" class="alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                                <div class="flex justify-between items-center w-full mb-2">
+                                    <span class="font-display font-bold text-lg text-white">15,000 ft</span>
+                                    <span class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></span>
+                                </div>
+                                <span class="text-xs text-gray-300">~60 sec max freefall</span>
+                                <span class="text-accentCyan font-bold text-sm mt-3">£325</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Media Package -->
+                    <div class="step-box p-6 rounded-2xl shadow-md">
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-skyLight/30">
+                            <span class="text-sm font-bold text-white uppercase tracking-wider flex items-center">
+                                <span class="w-7 h-7 rounded-lg bg-accentBlue text-skyDark flex items-center justify-center font-extrabold mr-2 text-xs">02</span>
+                                Select Media Package
+                            </span>
+                            <span class="text-xs text-gray-400">Click image to preview</span>
+                        </div>
+                        <div class="space-y-4">
+                            <!-- No Media -->
+                            <button type="button" onclick="setMedia('none', 0)" id="media-none" class="media-btn w-full p-4 rounded-xl border-2 text-left transition flex flex-col border-accentBlue bg-accentBlue/10">
+                                <div class="flex items-center justify-between w-full">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon"><i class="fa-solid fa-check"></i></div>
+                                        <div>
+                                            <div class="font-semibold text-white text-sm">No Media</div>
+                                            <div class="text-xs text-gray-400">Pure experience, 100% present</div>
+                                        </div>
+                                    </div>
+                                    <span class="font-bold text-accentCyan text-sm">£0</span>
+                                </div>
+                            </button>
+
+                            <!-- Handycam Selfie -->
+                            <button type="button" onclick="setMedia('handycam', 124)" id="media-handycam" class="media-btn w-full p-4 rounded-xl border-2 text-left transition flex flex-col border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                                <div class="flex items-center justify-between w-full">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
+                                        <div>
+                                            <div class="font-semibold text-white text-sm">Handycam Selfie - Video & Photos</div>
+                                            <div class="text-xs text-gray-400">Wrist-mounted close-up reactions</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div onclick="event.stopPropagation(); openModal('images/parachute.jpg', 'Handycam Selfie Angle')" class="relative group cursor-pointer" title="Click to preview">
+                                            <img src="images/parachute.jpg" alt="Preview" class="w-12 h-10 object-cover rounded-lg border border-accentBlue/50 group-hover:scale-105 transition">
+                                            <div class="absolute inset-0 bg-black/40 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition text-white text-[10px]">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </div>
+                                        </div>
+                                        <span class="font-bold text-gray-300 text-sm">£124</span>
+                                    </div>
+                                </div>
+                            </button>
+
+                            <!-- Ultimate Package -->
+                            <button type="button" onclick="setMedia('ultimate', 199)" id="media-ultimate" class="media-btn w-full p-4 rounded-xl border-2 text-left transition flex flex-col border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                                <div class="flex items-center justify-between w-full">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
+                                        <div>
+                                            <div class="font-semibold text-white text-sm">Ultimate Package (Cinematic)</div>
+                                            <div class="text-xs text-gray-400">Handycam + outside camera video & photos</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div onclick="event.stopPropagation(); openModal('images/external.jpg', 'Ultimate Cinematic Angle')" class="relative group cursor-pointer" title="Click to preview">
+                                            <img src="images/external.jpg" alt="Preview" class="w-12 h-10 object-cover rounded-lg border border-skyGold/50 group-hover:scale-105 transition">
+                                            <div class="absolute inset-0 bg-black/40 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition text-white text-[10px]">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </div>
+                                        </div>
+                                        <span class="font-bold text-gray-300 text-sm">£199</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Risk & Comfort Profile -->
+                    <div class="step-box p-6 rounded-2xl shadow-md">
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-skyLight/30">
+                            <span class="text-sm font-bold text-white uppercase tracking-wider flex items-center">
+                                <span class="w-7 h-7 rounded-lg bg-accentBlue text-skyDark flex items-center justify-center font-extrabold mr-2 text-xs">03</span>
+                                Select Comfort Profile
+                            </span>
+                            <span class="text-xs text-gray-400">Preferred style</span>
+                        </div>
+                        <div class="space-y-3">
+                            <button type="button" onclick="setProfile('Nervous / First-Timer', 0)" id="profile-nervous" class="profile-btn w-full p-4 rounded-xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
+                                    <div>
+                                        <div class="font-semibold text-white text-sm">Nervous / First-Timer</div>
+                                        <div class="text-xs text-gray-400">Extra reassurance & unhurried pacing</div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-gray-300 text-xs bg-skyLight/30 px-2 py-1 rounded">Supportive</span>
+                            </button>
+
+                            <button type="button" onclick="setProfile('Balanced & Adventurous', 0)" id="profile-balanced" class="profile-btn w-full p-4 rounded-xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon"><i class="fa-solid fa-check"></i></div>
+                                    <div>
+                                        <div class="font-semibold text-white text-sm">Balanced & Adventurous</div>
+                                        <div class="text-xs text-gray-400">Standard energised briefing & fun flight</div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-accentCyan text-xs bg-accentBlue/20 px-2 py-1 rounded">Default</span>
+                            </button>
+
+                            <button type="button" onclick="setProfile('Extreme & High Adrenaline', 0)" id="profile-extreme" class="profile-btn w-full p-4 rounded-xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon"><i class="fa-solid fa-check"></i></div>
+                                    <div>
+                                        <div class="font-semibold text-white text-sm">Extreme & High Adrenaline</div>
+                                        <div class="text-xs text-gray-400">High-speed canopy turns & aggressive freefall</div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-skyGold text-xs bg-skyGold/10 px-2 py-1 rounded">Thrill</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Summary Column -->
+                <div class="lg:col-span-5 flex flex-col justify-between bg-skyDark/60 p-6 sm:p-8 rounded-2xl border border-skyLight/30 sticky top-28 h-fit">
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-6 pb-4 border-b border-skyLight/30 flex items-center justify-between">
+                            <span>Your Custom Jump</span>
+                            <i class="fa-solid fa-receipt text-accentBlue"></i>
+                        </h3>
+
+                        <div class="space-y-4 text-sm mb-8">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-300">Location</span>
+                                <span class="font-semibold text-white">Dunkeswell</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span id="summary-alt-text" class="text-gray-300">10,000 ft Tandem</span>
+                                <span id="summary-alt-price" class="font-semibold text-white">£275</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span id="summary-media-text" class="text-gray-300">No Media</span>
+                                <span id="summary-media-price" class="font-semibold text-white">£0</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span id="summary-profile-text" class="text-gray-300">Balanced & Adventurous</span>
+                                <span id="summary-profile-price" class="font-semibold text-white">Included</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-300">1-to-1 Luxury Service</span>
+                                <span class="font-semibold text-accentCyan">Included</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="pt-4 border-t border-skyLight/30 flex justify-between items-center">
+                            <div>
+                                <span class="text-xs text-gray-400 block uppercase tracking-wider">Total Investment</span>
+                                <span class="text-3xl font-extrabold text-white font-display" id="total-price">£275</span>
+                            </div>
+                            <span class="text-xs text-accentCyan bg-accentBlue/10 px-3 py-1.5 rounded-lg border border-accentBlue/30">
+                                <i class="fa-solid fa-lock mr-1"></i> Secure Booking
+                            </span>
+                        </div>
+
+                        <!-- Web3Forms Form -->
+                        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3">
+                            <input type="hidden" name="access_key" value="2fe31536-9954-4ff4-aa5c-7cab5937d10f">
+                            <input type="hidden" name="subject" value="New Tailored Skydive Booking Request!">
+                            <input type="hidden" name="to" value="rich@tailoredskydive.com">
+                            <input type="hidden" id="form-package-details" name="package_details" value="Dunkeswell Luxury | 10,000 ft Tandem, No Media, Balanced Profile (£275)">
+
+                            <input type="text" id="book-name" name="name" placeholder="Your Full Name" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
+                            <input type="email" id="book-email" name="email" placeholder="Your Email Address" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
+                            <input type="tel" id="book-phone" name="phone" placeholder="Phone Number" required class="w-full bg-skyMid border border-skyLight/40 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-accentBlue">
+                            
+                            <button type="submit" class="w-full bg-accentBlue hover:bg-accentCyan text-skyDark font-bold py-3.5 rounded-xl transition shadow-lg text-center flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-envelope text-lg"></i>
+                                <span>Send Booking Request via Email</span>
+                            </button>
+                        </form>
+
+                        <div class="relative flex py-1 items-center">
+                            <div class="flex-grow border-t border-skyLight/30"></div>
+                            <span class="flex-shrink mx-4 text-gray-400 text-xs uppercase tracking-widest">or</span>
+                            <div class="flex-grow border-t border-skyLight/30"></div>
+                        </div>
+
+                        <button type="button" onclick="sendViaWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-xl transition shadow-lg text-center flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Send Booking via WhatsApp</span>
+                        </button>
+
+                        <p class="text-[11px] text-gray-400 text-center">Rich will personally review and get back to you within 24 hours.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Preview Lightbox Modal -->
+    <div id="photoModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-skyMid border border-skyLight/40 rounded-3xl max-w-2xl w-full p-6 relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl w-10 h-10 rounded-full bg-skyDark flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h4 id="modalTitle" class="text-white font-bold text-lg mb-4">Photo Preview</h4>
+            <div class="rounded-2xl overflow-hidden border border-accentBlue/30 mb-4 max-h-[60vh] flex items-center justify-center bg-black">
+                <img id="modalImg" src="" alt="Enlarged Preview" class="max-w-full max-h-[60vh] object-contain">
+            </div>
+            <p class="text-xs text-gray-400 text-center">Click outside or the X button to close preview.</p>
+        </div>
+    </div>
+
+    <!-- FAQ Section (All 20 Questions Restored) -->
+    <section id="faq" class="py-24 bg-skyMid/50 border-t border-skyLight/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-accentBlue text-xs font-bold uppercase tracking-widest bg-accentBlue/10 px-3.5 py-1 rounded-full">Got Questions?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Frequently Asked Questions</h2>
+                <p class="text-gray-300 text-sm">Everything you need to know about your luxury tandem skydive with Rich Taylor.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What is a tandem skydive?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        A tandem skydive is the ultimate way to experience freefall with minimal training. You are securely attached via a professional dual-harness system to an experienced instructor who manages all equipment, deployment, and landing, allowing you to simply absorb the incredible experience.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Do I need any previous experience or training?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        None at all. Before your jump, Rich will walk you through a thorough, one-to-one briefing covering body position, aircraft exit, and what to expect during the flight.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What are the age limits for tandem skydiving?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        You must be at least 16 years old to skydive. Anyone under 18 requires written parental or guardian consent. There is no upper age limit, provided you meet the medical fitness requirements.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Are there weight limits for a tandem skydive?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Yes, for safety and equipment operational limits, the maximum weight limit is approximately 90 kg (around 14 stone), fully clothed including shoes.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(5)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What should I wear, and can I wear glasses or contact lenses?</span>
+                        <i id="faq-icon-5" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-5" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        You should wear comfortable, weather-appropriate clothing that allows free movement—such as jeans or joggers and a t-shirt or fleece. Because it is cooler at altitude, dressing in layers works best. We provide your outer jumpsuit, harness, and goggles. Please wear supportive, flat trainers. Glasses or contact lenses are no problem; just let us know so we can secure them comfortably beneath your goggles.
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(6)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What medical requirements or forms do I need to complete?</span>
+                        <i id="faq-icon-6" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-6" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        All tandem students must complete British Skydiving medical documentation. If you meet all self-declaration criteria on Form 115a, you can sign it yourself. If you have listed medical conditions or previous injuries, you will need Form 115b signed and stamped by your doctor prior to jumping.
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(7)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What can I expect on the day of my skydive, from arrival to landing?</span>
+                        <i id="faq-icon-7" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-7" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Your day is structured and personal: arrival and sign-in, paperwork and your 1-to-1 safety briefing, kitting up in your jumpsuit and harness, a pre-jump video interview, final flight line checks, boarding the plane, freefall, canopy ride, and touchdown with a debrief.
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(8)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Can I get photos and a video of my skydive?</span>
+                        <i id="faq-icon-8" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-8" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Absolutely. Capturing the experience is a huge part of the day. You can choose from Handycam selfie packages or ultimate cinematic outside camera packages when configuring your jump.
+                    </div>
+                </div>
+
+                <!-- FAQ 9 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(9)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">If I have to choose between going higher or getting a video, which would you suggest?</span>
+                        <i id="faq-icon-9" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-9" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Rich's answer is always go higher! The freefall experience from a higher altitude is genuinely amazing. If budget allows, get both!
+                    </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(10)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What does freefall actually feel like? Will I feel like I'm falling on a rollercoaster?</span>
+                        <i id="faq-icon-10" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-10" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        You won't feel that theme park stomach-drop sensation at all. Because you exit an aircraft moving at high forward speed, freefall feels like floating on a massive, powerful cushion of air.
+                    </div>
+                </div>
+
+                <!-- FAQ 11 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(11)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What if I get nervous or scared on the day?</span>
+                        <i id="faq-icon-11" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-11" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Being nervous is completely normal. Because you booked a bespoke personal experience rather than an assembly line, we move at your pace and ensure you feel entirely confident before boarding.
+                    </div>
+                </div>
+
+                <!-- FAQ 12 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(12)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What kind of equipment do we use, and what safety backups are in place?</span>
+                        <i id="faq-icon-12" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-12" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        We use state-of-the-art dual-student tandem equipment maintained to strict British Skydiving standards, including a main parachute, independent reserve, and an Automatic Activation Device (AAD) backup computer.
+                    </div>
+                </div>
+
+                <!-- FAQ 13 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(13)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Will I be able to breathe during freefall, and can we talk?</span>
+                        <i id="faq-icon-13" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-13" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Yes, you can breathe normally through your nose or mouth. Freefall is loud due to wind rush (120 mph), so conversation happens under canopy once the parachute opens.
+                    </div>
+                </div>
+
+                <!-- FAQ 14 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(14)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What happens after the parachute opens?</span>
+                        <i id="faq-icon-14" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-14" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Once the parachute opens by 5,000 feet, freefall instantly transitions into a peaceful, quiet glide where you can take in the panoramic views and chat normally.
+                    </div>
+                </div>
+
+                <!-- FAQ 15 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(15)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Can I have a go at flying the parachute?</span>
+                        <i id="faq-icon-15" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-15" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Yes, if safe and time permits! Rich can hand over the steering toggles so you can experience piloting the canopy yourself.
+                    </div>
+                </div>
+
+                <!-- FAQ 16 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(16)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Can I bring friends and family along to watch my skydive, and can they jump too?</span>
+                        <i id="faq-icon-16" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-16" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Absolutely! Supporters make the day even more special with great viewing spots. Spectators wanting to jump on the day are always welcomed and accommodated where possible.
+                    </div>
+                </div>
+
+                <!-- FAQ 17 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(17)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What happens if I feel motion sick or unwell during the skydive?</span>
+                        <i id="faq-icon-17" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-17" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Clean air in freefall keeps everyone feeling great. If you feel queasy under canopy turns, just signal and we will immediately straighten into a gentle glide to land safely.
+                    </div>
+                </div>
+
+                <!-- FAQ 18 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(18)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Do I need to arrange my own insurance to go tandem skydive?</span>
+                        <i id="faq-icon-18" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-18" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Temporary third-party liability insurance is included with your British Skydiving membership when you jump. Personal accident or travel insurance can be arranged separately if desired.
+                    </div>
+                </div>
+
+                <!-- FAQ 19 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(19)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What happens after we land, and when do I get to see my photos and video?</span>
+                        <i id="faq-icon-19" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-19" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        After landing safely, we unclip, debrief, and de-kit. Rich always does his best to preview photos with you right after, with your full media package finalized and sent later that day.
+                    </div>
+                </div>
+
+                <!-- FAQ 20 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(20)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What if I love the tandem skydive and want to learn how to skydive solo?</span>
+                        <i id="faq-icon-20" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-20" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        That happens all the time! If you catch the bug, Rich can guide you through the Accelerated Freefall (AFF) training course and help you take your next steps toward solo skydiving.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#calculator" class="bg-accentBlue hover:bg-accentCyan text-skyDark font-bold px-8 py-4 rounded-xl text-sm transition shadow-lg">
+                    Ready to Book? Configure Your Jump Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-skyDark border-t border-skyLight/30 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-accentBlue to-skyLight flex items-center justify-center text-skyDark font-bold text-sm">
+                    <i class="fa-solid fa-parachute-box"></i>
+                </div>
+                <span class="font-display font-bold text-lg text-white">TAILORED<span class="text-accentBlue">SKYDIVE</span></span>
+            </div>
+            <div class="text-xs text-gray-400 text-center md:text-left">
+                &copy; 2026 Tailored Skydive (Rich Taylor). All rights reserved. Luxury Tandem Skydiving at Dunkeswell.
+            </div>
+            <div class="flex space-x-4 text-gray-400 text-sm">
+                <a href="#" class="hover:text-accentBlue transition"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-accentBlue transition"><i class="fa-brands fa-facebook text-lg"></i></a>
+                <a href="#" class="hover:text-accentBlue transition"><i class="fa-brands fa-youtube text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Calculator, Lightbox & FAQ -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function toggleFaq(id) {
+            const content = document.getElementById('faq-content-' + id);
+            const icon = document.getElementById('faq-icon-' + id);
+            
+            content.classList.toggle('hidden');
+            if(content.classList.contains('hidden')) {
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        function openModal(imgSrc, title) {
+            document.getElementById('modalImg').src = imgSrc;
+            document.getElementById('modalTitle').innerText = title;
+            const modal = document.getElementById('photoModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('photoModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        document.getElementById('photoModal').addEventListener('click', (e) => {
+            if(e.target.id === 'photoModal') closeModal();
+        });
+
+        let currentAltitudePrice = 275;
+        let currentAltitudeName = "10,000 ft Tandem";
+        let currentMediaPrice = 0;
+        let currentMediaName = "No Media";
+        let currentProfilePrice = 0;
+        let currentProfileName = "Balanced & Adventurous";
+
+        function setAltitude(alt, price) {
+            currentAltitudePrice = price;
+            currentAltitudeName = alt.toLocaleString() + " ft Tandem";
+
+            const btn10k = document.getElementById('alt-10k');
+            const btn15k = document.getElementById('alt-15k');
+
+            if(alt === 10000) {
+                btn10k.className = "alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-accentBlue bg-accentBlue/10";
+                btn10k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
+                btn10k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
+
+                btn15k.className = "alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn15k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
+                btn15k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
+            } else {
+                btn15k.className = "alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-accentBlue bg-accentBlue/10";
+                btn15k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
+                btn15k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
+
+                btn10k.className = "alt-btn p-4 rounded-xl border-2 text-left transition flex flex-col justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn10k.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
+                btn10k.querySelector('.check-icon').innerHTML = '<i class="fa-solid fa-check"></i>';
+            }
+
+            updateSummary();
+        }
+
+        function setMedia(type, price) {
+            currentMediaPrice = price;
+            
+            const btnNone = document.getElementById('media-none');
+            const btnHandycam = document.getElementById('media-handycam');
+            const btnUltimate = document.getElementById('media-ultimate');
+
+            [btnNone, btnHandycam, btnUltimate].forEach(btn => {
+                btn.className = "media-btn w-full p-4 rounded-xl border-2 text-left transition flex flex-col border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
+            });
+
+            let activeBtn;
+            if(type === 'none') {
+                activeBtn = btnNone;
+                currentMediaName = "No Media";
+            } else if(type === 'handycam') {
+                activeBtn = btnHandycam;
+                currentMediaName = "Handycam Selfie - Video & Photos";
+            } else {
+                activeBtn = btnUltimate;
+                currentMediaName = "Ultimate Package (Cinematic)";
+            }
+
+            activeBtn.className = "media-btn w-full p-4 rounded-xl border-2 text-left transition flex flex-col border-accentBlue bg-accentBlue/10";
+            activeBtn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
+
+            updateSummary();
+        }
+
+        function setProfile(profileName, price) {
+            currentProfilePrice = price;
+            currentProfileName = profileName;
+
+            const btnNervous = document.getElementById('profile-nervous');
+            const btnBalanced = document.getElementById('profile-balanced');
+            const btnExtreme = document.getElementById('profile-extreme');
+
+            [btnNervous, btnBalanced, btnExtreme].forEach(btn => {
+                btn.className = "profile-btn w-full p-4 rounded-xl border-2 text-left transition flex items-center justify-between border-skyLight/40 bg-skyDark/40 hover:border-accentBlue/50";
+                btn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-gray-500 flex items-center justify-center text-transparent text-xs check-icon";
+            });
+
+            let activeBtn;
+            if(profileName.includes('Nervous')) activeBtn = btnNervous;
+            else if(profileName.includes('Balanced')) activeBtn = btnBalanced;
+            else activeBtn = btnExtreme;
+
+            activeBtn.className = "profile-btn w-full p-4 rounded-xl border-2 text-left transition flex items-center justify-between border-accentBlue bg-accentBlue/10";
+            activeBtn.querySelector('.check-icon').className = "w-5 h-5 rounded-full border-2 border-accentBlue flex items-center justify-center bg-accentBlue text-skyDark text-xs check-icon";
+
+            updateSummary();
+        }
+
+        function updateSummary() {
+            document.getElementById('summary-alt-text').innerText = currentAltitudeName;
+            document.getElementById('summary-alt-price').innerText = '£' + currentAltitudePrice;
+
+            document.getElementById('summary-media-text').innerText = currentMediaName;
+            document.getElementById('summary-media-price').innerText = '£' + currentMediaPrice;
+
+            document.getElementById('summary-profile-text').innerText = currentProfileName;
+            document.getElementById('summary-profile-price').innerText = 'Included';
+
+            const total = currentAltitudePrice + currentMediaPrice + currentProfilePrice;
+            document.getElementById('total-price').innerText = '£' + total;
+
+            const summaryString = `Dunkeswell Luxury 1-to-1 | ${currentAltitudeName} | ${currentMediaName} | Profile: ${currentProfileName} | Total: £${total}`;
+            document.getElementById('form-package-details').value = summaryString;
+        }
+
+        function sendViaWhatsApp() {
+            const name = document.getElementById('book-name').value || "[Name not provided]";
+            const phone = document.getElementById('book-phone').value || "[Name not provided]";
+            const total = currentAltitudePrice + currentMediaPrice + currentProfilePrice;
+
+            const message = `Hi Rich! I'd like to book a luxury custom skydive with you at Dunkeswell:%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Altitude:* ${currentAltitudeName}%0A*Media:* ${currentMediaName}%0A*Style:* ${currentProfileName}%0A*Total:* £${total}%0A%0APlease let me know your availability!`;
+            
+            const whatsappNumber = "447817976703"; 
+            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
