@@ -75,6 +75,7 @@
                 <a href="#calculator" class="hover:text-accentBlue transition">Build Your Jump</a>
                 <a href="#rich" class="hover:text-accentBlue transition">Meet Rich</a>
                 <a href="#testimonials" class="hover:text-accentBlue transition">Reviews</a>
+                <a href="#faq" class="hover:text-accentBlue transition">FAQ</a>
             </div>
 
             <div class="hidden md:block">
@@ -96,6 +97,7 @@
             <a href="#calculator" class="block py-2 text-gray-200 hover:text-accentBlue">Build Your Jump</a>
             <a href="#rich" class="block py-2 text-gray-200 hover:text-accentBlue">Meet Rich</a>
             <a href="#testimonials" class="block py-2 text-gray-200 hover:text-accentBlue">Reviews</a>
+            <a href="#faq" class="block py-2 text-gray-200 hover:text-accentBlue">FAQ</a>
             <div class="pt-2">
                 <a href="#calculator" class="block text-center w-full bg-accentBlue text-skyDark font-semibold py-3 rounded-xl shadow">Configure & Book</a>
             </div>
@@ -536,7 +538,7 @@
 
             <div class="lg:col-span-7 space-y-6">
                 <span class="text-accentBlue text-xs font-bold uppercase tracking-widest bg-accentBlue/10 px-3.5 py-1 rounded-full">Meet Your Instructor</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Hi, I's Rich Taylor.</h2>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Hi, I'm Rich Taylor.</h2>
                 <p class="text-lg text-gray-300 font-light leading-relaxed">
                     My own skydiving journey started right here at Dunkeswell with my very first tandem jump! Since then, I’ve accumulated over <strong class="text-white font-medium">3,500 skydives</strong> jumping worldwide, alongside a lifelong passion for paragliding, surfing, golf, and pickleball. As a multi-medallist across multiple national sports including skydiving, elite performance and precision are in everything I do.
                 </p>
@@ -622,6 +624,239 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-skyMid/50 border-t border-skyLight/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-accentBlue text-xs font-bold uppercase tracking-widest bg-accentBlue/10 px-3.5 py-1 rounded-full">Got Questions?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Frequently Asked Questions</h2>
+                <p class="text-gray-300">Everything you need to know about your luxury tandem skydive experience with Rich Taylor at Dunkeswell.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What is a tandem skydive?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        A tandem skydive is the ultimate way to experience freefall with minimal training. You are securely attached via a professional dual-harness system to an experienced instructor who manages all the equipment, deployment, and landing, allowing you to simply absorb the incredible experience.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Do I need any previous experience or training?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        None at all. Before your jump, I will walk you through a thorough, one-to-one briefing that covers everything you need to know about body position, aircraft exit, and what to expect during the flight.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What are the age limits for tandem skydiving?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        You must be at least 16 years old to skydive. Anyone under 18 requires written parental or guardian consent. There is no upper age limit, provided you meet the medical fitness requirements.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Are there weight limits for a tandem skydive?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Yes, for safety and equipment operational limits, the maximum weight limit is approximately 90 kg (around 14 stone), fully clothed including shoes.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(5)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What should I wear, and can I wear glasses or contact lenses?</span>
+                        <i id="faq-icon-5" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-5" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        You should wear comfortable, weather-appropriate clothing that allows for free movement—such as jeans or joggers and a t-shirt or fleece depending on the season. Because it is significantly cooler at altitude, dressing in comfortable layers works best. We will provide you with an outer tandem jumpsuit, harness, and goggles. For footwear, please wear supportive, flat trainers or lace-up sports shoes (strictly no boots with hooks, sandals, or high heels). If you wear glasses or contact lenses, that's no problem at all—just let me know beforehand so we can ensure they are securely fastened or fit comfortably beneath your goggles.
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(6)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What medical requirements or forms do I need to complete?</span>
+                        <i id="faq-icon-6" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-6" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        All tandem students must complete the British Skydiving medical documentation. If you meet all the self-declaration criteria on Form 115a, you can sign it yourself. If you have any listed medical conditions or previous injuries, you will need Form 115b signed and stamped by your doctor prior to jumping.
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(7)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What can I expect on the day of my skydive, from arrival to landing?</span>
+                        <i id="faq-icon-7" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-7" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Your day is structured, thorough, and personal. The process runs from arrival and sign-in, through your paperwork and one-to-one safety briefing, to a short wait for your flight slot. From there, you will get kitted up in your jumpsuit and harness, do a quick pre-jump video interview, run through final flight line checks, and board the plane. After the jump, freefall, and canopy ride, we touch down for a post-jump debrief, de-kit, and final wrap-up.
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(8)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Can I get photos and a video of my skydive?</span>
+                        <i id="faq-icon-8" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-8" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Absolutely. Capturing the experience is a huge part of the day so you can relive it and share it with friends and family. Since I am working with you as your bespoke instructor, we can discuss the media options available—whether it's handheld camera footage from my perspective or coordinating a dedicated camera flyer. If you are unsure about what media package to choose or want some advice prior to booking, just get in touch with me directly.
+                    </div>
+                </div>
+
+                <!-- FAQ 9 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(9)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">If I have to choose between going higher or getting a video, which would you suggest?</span>
+                        <i id="faq-icon-9" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-9" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        My answer is always go higher. The freefall experience from a higher altitude is genuinely amazing, and the memories of that feeling will last forever. Of course, if budget allows and you want to be able to show it off and relive it later down the line, my advice is to get both!
+                    </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(10)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What does freefall actually feel like? Will I feel like I'm falling on a rollercoaster?</span>
+                        <i id="faq-icon-10" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-10" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        A lot of people expect that dropping stomach-drop sensation you get on a theme park ride, but you actually won't feel that at all. Because you're exiting an aircraft moving at high forward speed, freefall feels more like floating on a massive, powerful cushion of air rather than dropping downward. It's exhilarating, incredibly freeing, and completely surreal.
+                    </div>
+                </div>
+
+                <!-- FAQ 11 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(11)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What if I get nervous or scared on the day?</span>
+                        <i id="faq-icon-11" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-11" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Being nervous is completely normal—it’s a natural human reaction to doing something extraordinary! Because you booked a bespoke, personal experience rather than a high-volume assembly line, we will move at your pace, talk through every step, and make sure you feel entirely comfortable and confident before getting on the plane.
+                    </div>
+                </div>
+
+                <!-- FAQ 12 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(12)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What kind of equipment do we use, and what safety backups are in place?</span>
+                        <i id="faq-icon-12" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-12" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        We use state-of-the-art dual-student tandem equipment meticulously maintained to strict British Skydiving standards. Every system includes a main parachute, an independent reserve parachute, and an Automatic Activation Device (AAD)—a computerized backup unit that will automatically deploy the reserve parachute if parameters are met.
+                    </div>
+                </div>
+
+                <!-- FAQ 13 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(13)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Will I be able to breathe during freefall, and can we talk?</span>
+                        <i id="faq-icon-13" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-13" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Yes, you can breathe normally through your nose or mouth—the rush of air is powerful, but it doesn't stop you from breathing. Freefall is loud due to the wind rushing past at around 120 mph, so verbal conversation happens once the parachute opens and we're flying under canopy. During freefall, we rely on clear hand signals and body language.
+                    </div>
+                </div>
+
+                <!-- FAQ 14 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(14)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What happens after the parachute opens?</span>
+                        <i id="faq-icon-14" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-14" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Once the parachute opens by 5,000 feet, the roaring rush of freefall instantly transitions into a peaceful, quiet glide. This is where you get to catch your breath, take in the panoramic views, and chat normally. If you're feeling adventurous, we can ramp up the excitement with some turns, or we can just cruise and enjoy the scenery.
+                    </div>
+                </div>
+
+                <!-- FAQ 15 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(15)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Can I have a go at flying the parachute?</span>
+                        <i id="faq-icon-15" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-15" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Yes, if there is time and it's safe to do so! Once the canopy is open and we have stabilized under a good parachute, I can hand over the steering toggles so you can experience what it feels like to pilot the canopy. We can tailor the ride to whatever you're looking for—whether you want a calm, scenic cruise or a roller-coaster ride with sharp turns. Just talk to me beforehand, or let me help you push your boundaries a bit.
+                    </div>
+                </div>
+
+                <!-- FAQ 16 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(16)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Can I bring friends and family along to watch my skydive, and can they jump too?</span>
+                        <i id="faq-icon-16" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-16" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Absolutely, bringing supporters along makes the day even more special! We can coordinate a great spot for your guests to watch you touch down and take photos. Plus, if any of your spectators catch the bug and decide they want to jump on the day as a last-minute addition, I will always do my absolute best to organize that for them too.
+                    </div>
+                </div>
+
+                <!-- FAQ 17 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(17)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What happens if I feel motion sick or unwell during the skydive?</span>
+                        <i id="faq-icon-17" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-17" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        The clean air in freefall usually keeps everyone feeling great. However, if you do happen to feel a bit queasy—typically during some of the steering turns under the canopy—just let me know or give the signal. We can immediately straighten up into a calm, gentle glide and get us straight down to land safely.
+                    </div>
+                </div>
+
+                <!-- FAQ 18 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(18)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">Do I need to arrange my own insurance to go tandem skydive?</span>
+                        <i id="faq-icon-18" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-18" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Temporary third-party liability insurance is included as part of your British Skydiving membership when you jump. However, this primarily covers third-party liability and does not act as personal accident or travel insurance. If you want personal medical, life, or accident coverage specifically for skydiving, you may want to check your existing policies or look into extreme sports insurance providers beforehand.
+                    </div>
+                </div>
+
+                <!-- FAQ 19 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(19)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What happens after we land, and when do I get to see my photos and video?</span>
+                        <i id="faq-icon-19" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-19" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        Once we touch down safely, we'll unclip from the harness and take a moment to let the adrenaline settle. We'll do a quick debrief and get you de-kitted, and I will always do my best to preview some of the photos with you and your family right after so you can share the moment together. Your full media package is then finalized and sent over to you later that day.
+                    </div>
+                </div>
+
+                <!-- FAQ 20 -->
+                <div class="glass-card rounded-2xl border border-skyLight/30 overflow-hidden">
+                    <button onclick="toggleFaq(20)" class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display font-bold text-white text-base sm:text-lg">What if I love the tandem skydive and want to learn how to skydive solo?</span>
+                        <i id="faq-icon-20" class="fa-solid fa-chevron-down text-accentBlue transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-20" class="hidden px-6 pb-6 text-gray-300 text-sm leading-relaxed border-t border-skyLight/20 pt-4">
+                        That happens all the time! Your first tandem skydive is often the gateway into the sport. If you catch the bug and want to learn to jump on your own, I can point you in the exact right direction, advise you on the Accelerated Freefall (AFF) training course through British Skydiving, and help you take those next steps to becoming a qualified skydiver.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-skyDark border-t border-skyLight/30 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
@@ -642,13 +877,26 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Calculator, Actions & Lightbox Modal -->
+    <!-- JavaScript for Calculator, Actions, Lightbox & FAQ Accordions -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        // FAQ Toggle Function
+        function toggleFaq(id) {
+            const content = document.getElementById('faq-content-' + id);
+            const icon = document.getElementById('faq-icon-' + id);
+            
+            content.classList.toggle('hidden');
+            if(content.classList.contains('hidden')) {
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
 
         // Lightbox Modal Functions
         function openModal(imgSrc, title) {
