@@ -237,12 +237,16 @@
             
             <!-- Section 1 & Section 2 Grid -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                <!-- Instructor Photo -->
+                <!-- Instructor Photo (Clickable to Lightbox) -->
                 <div class="lg:col-span-5 space-y-6 sticky top-28">
-                    <div class="relative">
-                        <div class="absolute -inset-2 bg-gradient-to-r from-accentBlue to-skyLight rounded-3xl blur-lg opacity-30"></div>
+                    <div class="relative group cursor-pointer" onclick="openModal('images/self.jpg', 'Rich Taylor - Skydive Instructor (self.jpg)')" title="Click to view full size">
+                        <div class="absolute -inset-2 bg-gradient-to-r from-accentBlue to-skyLight rounded-3xl blur-lg opacity-30 group-hover:opacity-60 transition"></div>
                         <div class="relative glass-card p-4 rounded-3xl border border-accentBlue/30">
                             <img src="images/self.jpg" alt="Rich Taylor - Skydive Instructor" class="rounded-2xl w-full h-[460px] object-cover">
+                            <div class="absolute inset-4 rounded-2xl bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition text-white font-semibold space-x-2">
+                                <i class="fa-solid fa-magnifying-glass-plus text-xl text-accentCyan"></i>
+                                <span>Click to Enlarge</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -279,17 +283,17 @@
                 </div>
             </div>
 
-            <!-- Section 3: Why Dunkeswell? (The Ultimate Dropzone) -->
+            <!-- Section 3: Why Devon? (The Ultimate Dropzone) -->
             <div class="glass-card p-8 sm:p-14 rounded-3xl border border-accentBlue/30 relative overflow-hidden">
                 <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-accentBlue/10 rounded-full blur-3xl pointer-events-none"></div>
                 <div class="max-w-3xl space-y-5 relative z-10">
                     <span class="text-accentBlue text-sm font-bold uppercase tracking-widest bg-accentBlue/10 px-4 py-1.5 rounded-full">The Location</span>
-                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Why Dunkeswell? <span class="block text-sm text-accentCyan font-normal tracking-wide uppercase mt-1">The Ultimate Dropzone</span></h3>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Why Devon? <span class="block text-sm text-accentCyan font-normal tracking-wide uppercase mt-1">The Ultimate Dropzone</span></h3>
                     <p class="text-lg text-gray-200 leading-relaxed">
-                        Dunkeswell is easily one of the finest places in the country to jump. On a clear day, you get breathtaking panoramic views stretching from Weymouth to Wales, taking in both the north and south coastlines. Combined with a relaxed, easygoing local vibe, it’s the ultimate setting for an exclusive, hand-crafted skydiving experience.
+                        Dunkeswell is easily one of the prettiest places in the country to jump. On a clear day, you get breathtaking panoramic views stretching from Weymouth to Wales, taking in both the north and south coastlines. Combined with a relaxed, easygoing local vibe, it’s the ultimate setting for an exclusive, hand-crafted skydiving experience.
                     </p>
                     <p class="text-lg text-gray-200 leading-relaxed">
-                        I live right about halfway between Dunkeswell and Salisbury, so if you're looking for the best skydive experience in the region or comparing options around Salisbury, I am perfectly placed to help you make it happen.
+                        Positioned right between Dunkeswell and Salisbury, I'm right where you need me if you're planning to go skydive or trying to track down the best skydive options across the region.
                     </p>
                 </div>
             </div>
@@ -383,7 +387,7 @@
         </div>
     </section>
 
-    <!-- Tailored For Every Mindset (Experience section) -->
+    <!-- Tailored For Every Mindset (Experience section with Clickable Photos) -->
     <section id="experience" class="py-24 bg-skyMid/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
@@ -395,9 +399,13 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Nervous / First Timers -->
                 <div class="glass-card rounded-2xl overflow-hidden relative hover:border-accentBlue/50 transition group flex flex-col justify-between">
-                    <div class="h-52 overflow-hidden relative">
+                    <div class="h-52 overflow-hidden relative cursor-pointer" onclick="openModal('images/selfie.jpg', 'Nervous First Timer Support (selfie.jpg)')" title="Click to view full size">
                         <img src="images/selfie.jpg" alt="Nervous First Timer Support" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-skyDark via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition text-white font-semibold space-x-2">
+                            <i class="fa-solid fa-magnifying-glass-plus text-lg text-accentCyan"></i>
+                            <span>Click to Enlarge</span>
+                        </div>
                     </div>
                     <div class="p-8 pt-3">
                         <div class="w-14 h-14 rounded-xl bg-accentBlue/20 flex items-center justify-center text-accentBlue text-2xl mb-4 -mt-10 relative z-10 border border-accentBlue/30 backdrop-blur-md">
@@ -416,9 +424,13 @@
 
                 <!-- Balanced & Adventurous -->
                 <div class="glass-card rounded-2xl overflow-hidden relative hover:border-accentBlue/50 transition group flex flex-col justify-between">
-                    <div class="h-52 overflow-hidden relative">
+                    <div class="h-52 overflow-hidden relative cursor-pointer" onclick="openModal('images/exit.jpg', 'Balanced Adventurous (exit.jpg)')" title="Click to view full size">
                         <img src="images/exit.jpg" alt="Balanced Adventurous" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-skyDark via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition text-white font-semibold space-x-2">
+                            <i class="fa-solid fa-magnifying-glass-plus text-lg text-accentCyan"></i>
+                            <span>Click to Enlarge</span>
+                        </div>
                     </div>
                     <div class="p-8 pt-3">
                         <div class="w-14 h-14 rounded-xl bg-accentBlue/20 flex items-center justify-center text-accentBlue text-2xl mb-4 -mt-10 relative z-10 border border-accentBlue/30 backdrop-blur-md">
@@ -437,9 +449,13 @@
 
                 <!-- Extreme Adrenaline -->
                 <div class="glass-card rounded-2xl overflow-hidden relative hover:border-skyGold/50 transition group flex flex-col justify-between">
-                    <div class="h-52 overflow-hidden relative">
+                    <div class="h-52 overflow-hidden relative cursor-pointer" onclick="openModal('images/extreme.jpg', 'Extreme Adrenaline (extreme.jpg)')" title="Click to view full size">
                         <img src="images/extreme.jpg" alt="Extreme Adrenaline" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-skyDark via-transparent to-transparent"></div>
+                        <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition text-white font-semibold space-x-2">
+                            <i class="fa-solid fa-magnifying-glass-plus text-lg text-skyGold"></i>
+                            <span>Click to Enlarge</span>
+                        </div>
                     </div>
                     <div class="p-8 pt-3">
                         <div class="absolute top-4 right-4 text-skyGold bg-skyDark/80 px-3 py-1 rounded-full text-sm font-bold border border-skyGold/30">
