@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Tailored Skydive with Rich Taylor</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        skyDark: '#0B132B',
+                        skyMid: '#1C2541',
+                        skyLight: '#3A506B',
+                        accentBlue: '#00B4D8',
+                        accentCyan: '#90E0EF',
+                        skyGold: '#D4AF37'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ========================================== -->
+    <!-- GOOGLE ADS GLOBAL SITE TAG & CONVERSION CODE -->
+    <!-- ========================================== -->
+    <!-- Replace AW-XXXXXXXXX with your actual Google Ads ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-XXXXXXXXX');
+    </script>
+
+    <!-- Event snippet for Booking Conversion page -->
+    <script>
+      gtag('event', 'conversion', {
+          'send_to': 'AW-XXXXXXXXX/YOUR_CONVERSION_LABEL'
+      });
+    </script>
+    <!-- ========================================== -->
+
+    <style>
+        body { font-family: 'Inter', sans-serif; font-size: 1.05rem; }
+        h1, h2, h3, h4, h5, h6, .font-display { font-family: 'Outfit', sans-serif; }
+        .glass-card {
+            background: rgba(28, 37, 65, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(144, 224, 239, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-skyDark text-gray-100 antialiased selection:bg-accentBlue selection:text-skyDark min-h-screen flex flex-col justify-between">
+
+    <!-- Navigation Header -->
+    <nav class="bg-skyDark/95 backdrop-blur-md border-b border-skyLight/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-accentBlue to-skyLight flex items-center justify-center text-skyDark font-bold text-xl shadow-lg shadow-accentBlue/20">
+                    <i class="fa-solid fa-parachute-box"></i>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-xl tracking-tight text-white">TAILORED<span class="text-accentBlue">SKYDIVE</span></span>
+                    <span class="block text-[10px] tracking-widest text-gray-400 uppercase">Luxury Tandem Service by Rich Taylor</span>
+                </div>
+            </a>
+            <div>
+                <a href="index.html" class="text-sm font-semibold text-accentCyan hover:underline flex items-center space-x-2">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Back to Home</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Thank You Content -->
+    <main class="flex-grow flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl w-full text-center space-y-8 glass-card p-10 sm:p-14 rounded-3xl border border-accentBlue/30 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-20 -top-20 w-60 h-60 bg-accentBlue/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <!-- Success Icon -->
+            <div class="w-20 h-20 bg-accentBlue/20 text-accentBlue rounded-2xl flex items-center justify-center mx-auto text-4xl border border-accentBlue/30 shadow-inner">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <div class="space-y-4">
+                <span class="text-accentBlue text-sm font-bold uppercase tracking-widest bg-accentBlue/10 px-4 py-1.5 rounded-full">Request Received</span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white">Thank You, We've Got Your Booking!</h1>
+                <p class="text-lg text-gray-200 leading-relaxed font-light">
+                    Your custom skydive request at Dunkeswell has been sent straight to Rich. He will review your details and get back to you within 24 hours to finalize your jump.
+                </p>
+            </div>
+
+            <div class="pt-6 border-t border-skyLight/30 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" class="bg-accentBlue hover:bg-accentCyan text-skyDark font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-accentBlue/25 flex items-center justify-center space-x-2 text-base">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Return to Homepage</span>
+                </a>
+                <a href="https://wa.me/447817976703" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-emerald-600/20 flex items-center justify-center space-x-2 text-base">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Message Rich on WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-skyDark border-t border-skyLight/30 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-400">
+            &copy; 2026 Tailored Skydive (Rich Taylor). All rights reserved. Luxury Tandem Skydiving at Dunkeswell.
+        </div>
+    </footer>
+
+</body>
+</html>
