@@ -41,3 +41,13 @@ h1,h2,h3,h4,h5,h6,.font-display{font-family:'Outfit',sans-serif}
 .faq-details summary::-webkit-details-marker{display:none}
 .faq-details summary::after{content:"+";position:absolute;right:0;top:0;color:#00B4D8;font-size:1.5rem;line-height:1}
 .faq-details[open] summary::after{content:"\2212"}
+
+/* altitude diagram */
+.alt-figure svg{display:block;width:100%;max-width:560px;height:auto;margin:0 auto;border-radius:1.5rem;border:1px solid rgba(58,80,107,.5)}
+.alt-svg text{font-family:'Inter',sans-serif}
+.alt-table{width:100%;border-collapse:collapse;font-size:1rem}
+.alt-table th,.alt-table td{padding:.75rem .5rem;text-align:left;border-bottom:1px solid rgba(58,80,107,.5);color:#E5E7EB}
+.alt-table thead th{color:#00B4D8;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.alt-table tbody th{color:#fff;font-weight:700}
+.alt-table tr.hl td,.alt-table tr.hl th{color:#fff;background:rgba(0,180,216,.12)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
