@@ -21,3 +21,23 @@ h1,h2,h3,h4,h5,h6,.font-display{font-family:'Outfit',sans-serif}
   h1{overflow-wrap:break-word}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{transition-duration:.01ms!important}}
+
+/* skydive-devon page */
+.hover\:bg-accentBlue\/10:hover{background-color:rgb(0 180 216 / 0.1)}
+.border-skyLight\/60{border-color:rgb(58 80 107 / 0.6)}
+.flex-none{flex:none}
+.flex-wrap{flex-wrap:wrap}
+.gap-x-10{column-gap:2.5rem}
+.gap-y-5{row-gap:1.25rem}
+.h-9{height:2.25rem}
+.w-9{width:2.25rem}
+.h-auto{height:auto}
+.mt-3{margin-top:.75rem}
+.py-16{padding-top:4rem;padding-bottom:4rem}
+.space-y-5>:not([hidden])~:not([hidden]){margin-top:1.25rem}
+.space-y-20>:not([hidden])~:not([hidden]){margin-top:5rem}
+@media (min-width:640px){.sm\:py-24{padding-top:6rem;padding-bottom:6rem}}
+.faq-details summary{list-style:none;position:relative;padding-right:2rem}
+.faq-details summary::-webkit-details-marker{display:none}
+.faq-details summary::after{content:"+";position:absolute;right:0;top:0;color:#00B4D8;font-size:1.5rem;line-height:1}
+.faq-details[open] summary::after{content:"\2212"}
